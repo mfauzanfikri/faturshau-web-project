@@ -25,6 +25,7 @@ export default function RootLayout({
       <body className="font-poppins">
         <Navbar />
         {children}
+        {/* <Footer /> */}
       </body>
     </html>
   );
