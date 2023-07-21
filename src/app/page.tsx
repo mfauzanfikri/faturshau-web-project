@@ -1,3 +1,23 @@
 export default function Home() {
-  return <h1 className="pb-96">Landing Page</h1>;
+  return (
+    <div>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+      <h1 className="text-2xl">Landing Page</h1>
+    </div>
+  );
 }

@@ -33,7 +33,7 @@ const Navbar = () => {
     setIsShown(true);
   };
   return (
-    <div className="fixed w-full">
+    <div className="fixed w-full top-0 left-0">
       <nav ref={navRef} className="bg-black relative shadow-lg">
         <div className="mx-auto px-5 md:px-10 py-2 flex justify-between items-center text-white">
           {/* Logo */}
@@ -41,10 +41,10 @@ const Navbar = () => {
             <a href="/">
               <Image
                 src="/images/logo.png"
-                width={150}
-                height={150}
+                width={130}
+                height={130}
                 alt="logo"
-                className=""
+                className="w-32 md:w-36 xl:w-40"
               />
             </a>
           </div>
@@ -92,7 +92,7 @@ const Navbar = () => {
         {/* Mobile Nav Items */}
         <ul
           className={`w-full bg-white shadow-lg md:hidden absolute z-[-1] ${
-            !isShown ? 'opacity-0 -top-10' : 'opacity-100 top-[58.84px]'
+            !isShown ? 'opacity-0 -top-10' : 'opacity-100 top-[52.5px]'
           } transition-all duration-300 ease-in`}
         >
           <li>
@@ -103,7 +103,7 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#" className="inline-block w-full px-5 py-2">
-              Copywriting
+              Coppywriting
             </a>
           </li>
         </ul>
