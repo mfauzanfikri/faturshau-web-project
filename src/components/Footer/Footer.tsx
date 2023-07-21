@@ -2,24 +2,24 @@ const Footer = () => {
   return (
     <footer className="mt-auto">
       {/* subscribe card container */}
-      <div className="hidden w-full py-20 lg:flex justify-center items-center">
+      <div className="hidden w-full items-center justify-center py-20 lg:flex">
         {/* subscribe card content  */}
-        <div className="w-4/5 max-w-2xl text-center flex flex-col gap-2 px-8 py-20 rounded bg-gray-50 border border-slate-300 shadow-md shadow-slate-600">
-          <div className="text-center flex flex-col gap-2">
-            <h2 className="text-slate-500 text-xl">Train with the best</h2>
+        <div className="flex w-4/5 max-w-2xl flex-col gap-2 rounded border border-slate-300 bg-gray-50 px-8 py-20 text-center shadow-md shadow-slate-600">
+          <div className="flex flex-col gap-2 text-center">
+            <h2 className="text-xl text-slate-500">Train with the best</h2>
             <h2 className="text-4xl font-bold">Stay Tuned</h2>
             <p className="text-base text-slate-400">
               Subscribe to our newsletter to hear the latest news
             </p>
           </div>
           {/* subscribe input */}
-          <div className="mt-2 flex justify-center items-center gap-1.5">
+          <div className="mt-2 flex items-center justify-center gap-1.5">
             <input
               type="email"
               placeholder="Email"
-              className="w-3/4 min-w-[5rem] max-w-[18rem] px-2 py-1 text-base rounded-md border border-slate-400"
+              className="w-3/4 min-w-[5rem] max-w-[18rem] rounded-md border border-slate-400 px-2 py-1 text-base"
             />
-            <button className="w-auto min-w-min px-2.5 py-1.5 rounded-md text-base text-white bg-black hover:bg-opacity-80">
+            <button className="w-auto min-w-min rounded-md bg-black px-2.5 py-1.5 text-base text-white hover:bg-opacity-80">
               Subscribe
             </button>
           </div>
@@ -27,14 +27,14 @@ const Footer = () => {
       </div>
 
       {/* contact */}
-      <div className="flex justify-center my-2">
+      <div className="my-2 flex justify-center">
         <a
           href="https://twitter.com/thestorystylist"
           target="_blank"
-          className="flex items-center bg-black aspect-square rounded-full p-3 md:p-4 hover:cursor-pointer hover:bg-opacity-95"
+          className="flex aspect-square items-center rounded-full bg-black p-3 hover:cursor-pointer hover:bg-opacity-95 md:p-4"
         >
           <svg
-            className="w-6 md:w-8 fill-white"
+            className="w-6 fill-white md:w-8"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 248 204"
           >
@@ -44,12 +44,12 @@ const Footer = () => {
       </div>
 
       {/* mobile subsribe form */}
-      <div className="flex flex-col gap-1.5 lg:hidden py-2 px-8 mb-8">
+      <div className="mb-8 flex flex-col gap-1.5 px-8 py-2 lg:hidden">
         <div className="py-2 text-center">
-          <h2 className="text-xl font-bold mb-1.5">
+          <h2 className="mb-1.5 text-xl font-bold">
             1 online growth tip in less than 4 minutes.
           </h2>
-          <p className="text-base mb-1">
+          <p className="mb-1 text-base">
             Every Saturday morning, you&apos;ll get 1 actionable tip to help
             launch, grow, and monetize your internet business.
           </p>
@@ -57,18 +57,18 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-2">
           <input
-            className="text-sm p-3 rounded border border-transparent border-b-slate-400 focus:outline-0 focus:border-slate-400"
+            className="rounded border border-transparent border-b-slate-400 p-3 text-sm focus:border-slate-400 focus:outline-0"
             type="email"
             placeholder=">>> Your Best Email"
           />
-          <button className="text-white bg-black rounded py-1.5">
+          <button className="rounded bg-black py-1.5 text-white">
             Subscribe
           </button>
         </div>
       </div>
 
       {/* bottom footer */}
-      <div className="flex justify-center py-1.5 md:py-3 text-sm md:text-base text-center text-white bg-black">
+      <div className="flex justify-center bg-black py-1.5 text-center text-sm text-white md:py-3 md:text-base">
         <p>&#169; 2023 The Storystylist | All Rights Reserved.</p>
       </div>
     </footer>

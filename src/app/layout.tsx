@@ -1,19 +1,19 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '600', '700'],
-  variable: '--font-poppins',
-  fallback: ['sans-serif'],
+  subsets: ["latin"],
+  weight: ["300", "600", "700"],
+  variable: "--font-poppins",
+  fallback: ["sans-serif"],
 });
 
 export const metadata: Metadata = {
-  title: 'Faturshau',
-  description: 'Faturshau Web',
+  title: "Faturshau",
+  description: "Faturshau Web",
 };
 
 export default function RootLayout({
@@ -23,9 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html className={poppins.variable} lang="en">
-      <body className="font-poppins min-h-screen flex flex-col">
+      <body className="flex min-h-screen flex-col bg-white font-poppins text-black">
         <Navbar />
-        <main className="mt-16 mb-3">{children}</main>
+        <main className="mb-3 mt-[52px]">{children}</main>
         <Footer />
       </body>
     </html>

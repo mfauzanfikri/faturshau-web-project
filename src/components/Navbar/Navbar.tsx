@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
+import Image from "next/image";
+import React, { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const [isShown, setIsShown] = useState(false);
@@ -18,9 +18,9 @@ const Navbar = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside, true);
+    document.addEventListener("mousedown", handleClickOutside, true);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside, true);
+      document.removeEventListener("mousedown", handleClickOutside, true);
     };
   }, [navRef, isShown]);
 
@@ -33,9 +33,9 @@ const Navbar = () => {
     setIsShown(true);
   };
   return (
-    <div className="fixed w-full top-0 left-0">
-      <nav ref={navRef} className="bg-black relative shadow-lg">
-        <div className="mx-auto px-5 md:px-10 py-2 flex justify-between items-center text-white">
+    <div className="fixed left-0 top-0 w-full">
+      <nav ref={navRef} className="relative bg-black shadow-lg">
+        <div className="mx-auto flex items-center justify-between px-5 py-2 text-white md:px-10">
           {/* Logo */}
           <div>
             <a href="/">
@@ -49,14 +49,14 @@ const Navbar = () => {
             </a>
           </div>
           {/* Mobile Toggle */}
-          <div className="md:hidden flex items-center">
+          <div className="flex items-center md:hidden">
             <button
               className="hover:cursor-pointer"
               onClick={handleClickToggle}
             >
               {isShown ? (
                 <svg
-                  className=" fill-white w-5"
+                  className=" w-5 fill-white"
                   aria-hidden="true"
                   role="presentation"
                   viewBox="0 0 1000 1000"
@@ -66,7 +66,7 @@ const Navbar = () => {
                 </svg>
               ) : (
                 <svg
-                  className=" fill-white w-5"
+                  className=" w-5 fill-white"
                   aria-hidden="true"
                   role="presentation"
                   viewBox="0 0 1000 1000"
@@ -91,12 +91,12 @@ const Navbar = () => {
         </div>
         {/* Mobile Nav Items */}
         <ul
-          className={`w-full bg-white shadow-lg md:hidden absolute z-[-1] ${
-            !isShown ? 'opacity-0 -top-10' : 'opacity-100 top-[52.5px]'
+          className={`absolute z-[-1] w-full bg-white shadow-lg md:hidden ${
+            !isShown ? "-top-10 opacity-0" : "top-[52.5px] opacity-100"
           } transition-all duration-300 ease-in`}
         >
           <li>
-            <a href="#" className="inline-block w-full px-5 py-2 mo">
+            <a href="#" className="mo inline-block w-full px-5 py-2">
               Blog
             </a>
             <hr className="mx-3" />
