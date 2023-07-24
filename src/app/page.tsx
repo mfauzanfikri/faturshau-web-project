@@ -22,13 +22,13 @@ export default function Page() {
               Always join for free below.
             </p>
           </div>
-          <div className="flex flex-col gap-1 md:max-w-md">
+          <div className="flex flex-col gap-6 md:max-w-md lg:max-w-xl lg:flex-row">
             <input
-              className="border border-transparent border-b-slate-400 bg-black p-3 text-sm focus:outline-none md:text-lg"
+              className="border border-transparent border-b-slate-400 bg-black p-3 text-sm focus:outline-none md:text-lg lg:w-3/5"
               type="email"
               placeholder=">>> Your Best Email"
             />
-            <button className="mt-4 rounded border border-white bg-zinc-800 py-1.5 font-bold text-white md:text-lg">
+            <button className="mt-4 rounded border border-white bg-zinc-800 py-1.5 font-bold text-white md:text-lg lg:mt-0 lg:px-8">
               Subscribe
             </button>
           </div>
@@ -51,14 +51,14 @@ export default function Page() {
         </div>
       </section>
 
-      {/* section-2 */}
+      {/* section-2 divider 1 */}
       <section className="bg-zinc-800 py-8 text-center text-white">
         <p className="uppercase tracking-[0.3em]">freebies</p>
         <h2 className="pb-1 text-4xl font-bold">Best of Blog</h2>
         <p>Best post on copywriting and mindset</p>
       </section>
 
-      {/* section-3 */}
+      {/* section-3 services cards */}
       <section className="flex flex-col gap-14 px-5 pb-5 pt-3 text-slate-600 md:flex-row md:flex-wrap md:justify-center lg:gap-32 lg:pb-24 lg:pt-8">
         <div className="md:w-[45%] lg:w-[22%]">
           <div className="aspect-square w-full bg-zinc-700"></div>
@@ -88,17 +88,17 @@ export default function Page() {
         </div>
       </section>
 
-      {/* section-4 */}
+      {/* section-4 divider */}
       <section className="bg-zinc-800 py-8 text-center text-white">
         <p className="uppercase tracking-[0.3em]">story</p>
         <h2 className="pb-1 text-4xl font-bold">Who is Fatur Shau?</h2>
         <p>Direct-response copywriter and mindset diver.</p>
       </section>
 
-      {/* section-5 */}
+      {/* section-5 author */}
       <section className="mb-12 mt-6 px-5">
         <div className="flex flex-col items-center md:flex-row md:flex-wrap">
-          <div className="aspect-square w-72 md:flex md:w-1/2 md:items-center md:justify-center">
+          <div className="aspect-square w-64 md:flex md:w-1/2 md:items-center md:justify-center">
             <Image
               src="/images/fatur_shau.png"
               width={500}
@@ -115,7 +115,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* section-6 */}
+      {/* section-6 divider */}
       <section className="bg-zinc-800 px-1.5 py-8 text-center text-white">
         <h2 className="pb-1 text-3xl font-bold capitalize lg:hidden">
           3 ways i can help you
@@ -130,7 +130,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* section-7 */}
+      {/* section-7 offers cards */}
       <section className="flex flex-col gap-12 px-8 py-20 md:flex-row md:flex-wrap md:justify-center md:gap-16 lg:gap-14">
         {/* child-1 */}
         <div className="flex flex-col items-center gap-2 text-center md:w-[45%] lg:w-[30%]">
@@ -176,15 +176,16 @@ export default function Page() {
         </div>
       </section>
 
-      {/* section-8 */}
+      {/* section-8 divider */}
       <section className="bg-zinc-800 py-8 text-center text-white">
         <p className="uppercase tracking-[0.3em]">writing</p>
         <h2 className="pb-1 text-4xl font-bold">Read The Archives</h2>
         <p>Dives down on copywriting & comedy.</p>
       </section>
 
-      {/* section-9 */}
+      {/* section-9 cards  */}
       <section className="mb-10 mt-20 flex flex-col items-center justify-center gap-8 p-2.5 md:flex-row md:flex-wrap">
+        {/* child-1 */}
         <div className="max-w-md border border-solid border-zinc-200 bg-white py-4 shadow-lg">
           <div className="mb-3 px-8 ">
             <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
@@ -201,7 +202,7 @@ export default function Page() {
             <span>No Comments</span>
           </div>
         </div>
-
+        {/* child-2 */}
         <div className="max-w-md border border-solid border-zinc-200 bg-white py-4 shadow-lg">
           <div className="mb-3 px-8 ">
             <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
@@ -218,7 +219,7 @@ export default function Page() {
             <span>No Comments</span>
           </div>
         </div>
-
+        {/* child-3 */}
         <div className="max-w-md border border-solid border-zinc-200 bg-white py-4 shadow-lg">
           <div className="mb-3 px-8 ">
             <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
