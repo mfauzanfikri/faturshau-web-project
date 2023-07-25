@@ -4,14 +4,14 @@ export default function Page() {
   return (
     <>
       {/* section-1 hero */}
-      {/* //TODO make xxl screen adjustment */}
-      <section className="bg-black px-5 pb-12 pt-8 text-white md:flex md:gap-4 lg:px-12 lg:pb-28 xl:px-20 xl:pb-52 xl:pt-24 2xl:pb-80">
-        <div className="flex flex-1 flex-col gap-4">
+      <section className="bg-black px-5 pb-12 pt-8 text-white md:flex md:gap-4 lg:px-12 lg:pb-28 xl:px-20 xl:pb-52 xl:pt-24 2xl:px-32 2xl:pb-80 2xl:pt-28">
+        {/* caption */}
+        <div className="flex w-3/4 flex-initial flex-col gap-4">
           <div>
-            <h1 className="text-3xl font-bold capitalize md:text-5xl xl:text-6xl xl:leading-tight">
+            <h1 className="text-3xl font-bold capitalize md:text-5xl xl:text-6xl xl:leading-tight 2xl:text-7xl">
               killer copy <br /> comedic flair <br /> own your style
             </h1>
-            <p className="mb-2.5 mt-3 max-w-xs font-semibold md:max-w-sm md:text-xl lg:mb-5 lg:mt-8 lg:max-w-2xl">
+            <p className="mb-2.5 mt-3 max-w-xs font-semibold md:max-w-sm md:text-xl lg:mb-5 lg:mt-8 lg:max-w-2xl 2xl:max-w-4xl">
               Join the <b>1% stylish copywriters</b>. IF my DAILY emails don’t
               give you a single{" "}
               <b>
@@ -60,36 +60,53 @@ export default function Page() {
       </section>
 
       {/* section-3 services cards */}
-      <section className="flex flex-col gap-14 px-5 pb-5 pt-3 text-slate-600 md:flex-row md:flex-wrap md:justify-center lg:gap-32 lg:pb-24 lg:pt-8">
-        <div className="md:w-[45%] lg:w-[22%]">
-          {/* //TODO make img(div) and heading clickable */}
-          <div className="aspect-square w-full bg-zinc-700"></div>
-          <h3 className="mb-2 mt-4 text-lg font-semibold">Service 1</h3>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-            inventore.
-          </p>
+      <section className="flex flex-col gap-8 px-5 pb-8 pt-3 text-slate-600 lg:pb-16 lg:pt-8">
+        <div className="flex flex-col gap-14 md:flex-row md:flex-wrap md:justify-center lg:gap-32">
+          <div className="md:w-[45%] lg:w-[22%]">
+            <div className="group hover:cursor-pointer">
+              <div className="aspect-square w-full bg-zinc-700"></div>
+              <h3 className="mb-2 mt-4 text-lg font-semibold group-hover:opacity-90">
+                Service 1
+              </h3>
+            </div>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+              inventore.
+            </p>
+          </div>
+          <div className="md:w-[45%] lg:w-[22%]">
+            <div className="group hover:cursor-pointer">
+              <div className="aspect-square w-full bg-zinc-700"></div>
+              <h3 className="mb-2 mt-4 text-lg font-semibold group-hover:opacity-90">
+                Service 1
+              </h3>
+            </div>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+              inventore.
+            </p>
+          </div>
+          <div className="md:w-[45%] lg:w-[22%]">
+            <div className="group hover:cursor-pointer">
+              <div className="aspect-square w-full bg-zinc-700"></div>
+              <h3 className="mb-2 mt-4 text-lg font-semibold group-hover:opacity-90">
+                Service 1
+              </h3>
+            </div>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+              inventore.
+            </p>
+          </div>
         </div>
 
-        <div className="md:w-[45%] lg:w-[22%]">
-          <div className="aspect-square w-full bg-zinc-700"></div>
-          <h3 className="mb-2 mt-4 text-lg font-semibold">Service 1</h3>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-            inventore.
-          </p>
+        <div className="flex justify-center">
+          <a href="/blog" className="hover:opacity-95">
+            <button className="rounded border border-white bg-zinc-800 px-2 py-1.5 font-semibold text-white">
+              See More
+            </button>
+          </a>
         </div>
-
-        <div className="md:w-[45%] lg:w-[22%]">
-          <div className="aspect-square w-full bg-zinc-700"></div>
-          <h3 className="mb-2 mt-4 text-lg font-semibold">Service 1</h3>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-            inventore.
-          </p>
-        </div>
-
-        {/* //TODO make button that links to /blog */}
       </section>
 
       {/* section-4 divider */}
@@ -108,10 +125,9 @@ export default function Page() {
               width={500}
               height={500}
               alt="Fatur Shau"
-              className="mx-auto w-full rounded-full md:w-1/2"
+              className="-z-10 mx-auto w-full rounded-full md:w-1/2"
             />
-            {/* //TODO buat garis setinggi gambar tarok di tengah agak ngiri */}
-            <div className="absolute right-6 top-1/2 hidden h-1/2 w-1 -translate-y-1/2 bg-black md:block"></div>
+            <div className="absolute right-12 top-1/2 hidden h-1/2 w-[0.1rem] -translate-y-1/2 bg-black md:block"></div>
           </div>
           <div className="md:w-1/2 md:justify-start md:self-stretch">
             <p className="mt-4 font-semibold md:text-lg lg:text-xl">
@@ -187,58 +203,39 @@ export default function Page() {
 
       {/* section-9 cards  */}
       <section className="mb-10 mt-20 flex flex-col items-center justify-center gap-8 p-2.5 md:flex-row md:flex-wrap">
-        {/* child-1 */}
-        <div className="max-w-md rounded border border-solid border-zinc-200 bg-white py-4 shadow-lg">
+        <div className="max-w-md rounded bg-white py-4 lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
           <div className="mb-3 px-8 ">
-            {/* //TODO make small category text */}
+            <p className="mb-1 text-xs text-slate-500">Category</p>
             <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
             <p className="mb-4 text-sm text-zinc-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem eius praesentium ullam atque ducimus dolores quas
               tenetur maiores itaque. Quos.
             </p>
-            {/* //TODO delete this */}
-            <a href="#">Read More »</a>
-          </div>
-          {/* //TODO delete this */}
-          <div className="border-t px-8 pt-3 text-xs text-zinc-400">
-            <time>June 17, 2023</time>
-            <span className="mx-1 font-bold">•</span>
-            <span>No Comments</span>
           </div>
         </div>
-        {/* child-2 */}
-        <div className="max-w-md border border-solid border-zinc-200 bg-white py-4 shadow-lg">
+
+        <div className="max-w-md rounded bg-white py-4 lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
           <div className="mb-3 px-8 ">
+            <p className="mb-1 text-xs text-slate-500">Category</p>
             <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
             <p className="mb-4 text-sm text-zinc-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem eius praesentium ullam atque ducimus dolores quas
               tenetur maiores itaque. Quos.
             </p>
-            <a href="#">Read More »</a>
-          </div>
-          <div className="border-t px-8 pt-3 text-xs text-zinc-400">
-            <time>June 17, 2023</time>
-            <span className="mx-1 font-bold">•</span>
-            <span>No Comments</span>
           </div>
         </div>
-        {/* child-3 */}
-        <div className="max-w-md border border-solid border-zinc-200 bg-white py-4 shadow-lg">
+
+        <div className="max-w-md rounded bg-white py-4 lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
           <div className="mb-3 px-8 ">
+            <p className="mb-1 text-xs text-slate-500">Category</p>
             <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
             <p className="mb-4 text-sm text-zinc-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem eius praesentium ullam atque ducimus dolores quas
               tenetur maiores itaque. Quos.
             </p>
-            <a href="#">Read More »</a>
-          </div>
-          <div className="border-t px-8 pt-3 text-xs text-zinc-400">
-            <time>June 17, 2023</time>
-            <span className="mx-1 font-bold">•</span>
-            <span>No Comments</span>
           </div>
         </div>
       </section>

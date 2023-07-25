@@ -29,13 +29,18 @@ const Navbar = () => {
       setIsShown(false);
       return;
     }
-
+    <div className="group hover:cursor-pointer">
+      <div className="aspect-square w-full bg-zinc-700"></div>
+      <h3 className="mb-2 mt-4 text-lg font-semibold group-hover:opacity-90">
+        Service 1
+      </h3>
+    </div>;
     setIsShown(true);
   };
   return (
-    <div className="fixed left-0 top-0 w-full">
+    <div className="fixed left-0 top-0 z-50 w-full">
       <nav ref={navRef} className="relative bg-black shadow-lg">
-        <div className="mx-auto flex items-center justify-between px-5 py-2 text-white md:px-10">
+        <div className="mx-auto flex items-center justify-between px-5 py-2 text-white md:px-10 xl:px-16 2xl:px-28">
           {/* Logo */}
           <div>
             <a href="/">
