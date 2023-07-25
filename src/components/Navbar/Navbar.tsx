@@ -41,10 +41,11 @@ const Navbar = () => {
             <a href="/">
               <Image
                 src="/images/logo.png"
-                width={130}
-                height={130}
+                width={500}
+                height={500}
                 alt="logo"
                 className="w-32 md:w-36 xl:w-40"
+                priority={true}
               />
             </a>
           </div>
@@ -81,10 +82,16 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex gap-4">
               <li>
-                <a href="">Blog</a>
+                <a href="/blog">Blog</a>
               </li>
               <li>
                 <a href="">Coppywriting</a>
+              </li>
+              <li>
+                <a href="">Portfolio</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
               </li>
             </ul>
           </div>
@@ -96,7 +103,7 @@ const Navbar = () => {
           } transition-all duration-300 ease-in`}
         >
           <li>
-            <a href="#" className="mo inline-block w-full px-5 py-2">
+            <a href="/blog" className="mo inline-block w-full px-5 py-2">
               Blog
             </a>
             <hr className="mx-3" />
@@ -104,6 +111,18 @@ const Navbar = () => {
           <li>
             <a href="#" className="inline-block w-full px-5 py-2">
               Coppywriting
+            </a>
+            <hr className="mx-3" />
+          </li>
+          <li>
+            <a href="#" className="inline-block w-full px-5 py-2">
+              Portfolio
+            </a>
+            <hr className="mx-3" />
+          </li>
+          <li>
+            <a href="#" className="inline-block w-full px-5 py-2">
+              Contact
             </a>
           </li>
         </ul>

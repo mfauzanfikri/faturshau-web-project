@@ -4,6 +4,7 @@ export default function Page() {
   return (
     <>
       {/* section-1 hero */}
+      {/* //TODO make xxl screen adjustment */}
       <section className="bg-black px-5 pb-12 pt-8 text-white md:flex md:gap-4 lg:px-12 lg:pb-28 xl:px-20 xl:pb-52 xl:pt-24 2xl:pb-80">
         <div className="flex flex-1 flex-col gap-4">
           <div>
@@ -54,13 +55,14 @@ export default function Page() {
       {/* section-2 divider 1 */}
       <section className="bg-zinc-800 py-8 text-center text-white">
         <p className="uppercase tracking-[0.3em]">freebies</p>
-        <h2 className="pb-1 text-4xl font-bold">Best of Blog</h2>
+        <h2 className="mb-1 text-4xl font-bold">Best of Blog</h2>
         <p>Best post on copywriting and mindset</p>
       </section>
 
       {/* section-3 services cards */}
       <section className="flex flex-col gap-14 px-5 pb-5 pt-3 text-slate-600 md:flex-row md:flex-wrap md:justify-center lg:gap-32 lg:pb-24 lg:pt-8">
         <div className="md:w-[45%] lg:w-[22%]">
+          {/* //TODO make img(div) and heading clickable */}
           <div className="aspect-square w-full bg-zinc-700"></div>
           <h3 className="mb-2 mt-4 text-lg font-semibold">Service 1</h3>
           <p className="text-sm">
@@ -86,6 +88,8 @@ export default function Page() {
             inventore.
           </p>
         </div>
+
+        {/* //TODO make button that links to /blog */}
       </section>
 
       {/* section-4 divider */}
@@ -98,7 +102,7 @@ export default function Page() {
       {/* section-5 author */}
       <section className="mb-12 mt-6 px-5">
         <div className="flex flex-col items-center md:flex-row md:flex-wrap">
-          <div className="aspect-square w-64 md:flex md:w-1/2 md:items-center md:justify-center">
+          <div className="relative aspect-square w-64 md:flex md:w-1/2 md:items-center md:justify-center">
             <Image
               src="/images/fatur_shau.png"
               width={500}
@@ -106,6 +110,8 @@ export default function Page() {
               alt="Fatur Shau"
               className="mx-auto w-full rounded-full md:w-1/2"
             />
+            {/* //TODO buat garis setinggi gambar tarok di tengah agak ngiri */}
+            <div className="absolute right-6 top-1/2 hidden h-1/2 w-1 -translate-y-1/2 bg-black md:block"></div>
           </div>
           <div className="md:w-1/2 md:justify-start md:self-stretch">
             <p className="mt-4 font-semibold md:text-lg lg:text-xl">
@@ -117,17 +123,13 @@ export default function Page() {
 
       {/* section-6 divider */}
       <section className="bg-zinc-800 px-1.5 py-8 text-center text-white">
-        <h2 className="pb-1 text-3xl font-bold capitalize lg:hidden">
-          3 ways i can help you
+        <p className="uppercase tracking-[0.3em]">3 ways i can help you</p>
+        <h2 className="mt-2 pb-1 text-4xl font-bold">
+          Hire me. <span className="hidden md:inline"> </span>
+          <br className="md:hidden" />
+          Join my list. <span className="hidden md:inline"> </span>
+          <br className="md:hidden" /> Coppywriting
         </h2>
-        <div className="hidden lg:block">
-          <p className="uppercase tracking-[0.3em]">
-            3 different ways i can help you
-          </p>
-          <h2 className="pb-1 text-4xl font-bold">
-            Hire me. Join my list. Coppywriting
-          </h2>
-        </div>
       </section>
 
       {/* section-7 offers cards */}
@@ -186,16 +188,19 @@ export default function Page() {
       {/* section-9 cards  */}
       <section className="mb-10 mt-20 flex flex-col items-center justify-center gap-8 p-2.5 md:flex-row md:flex-wrap">
         {/* child-1 */}
-        <div className="max-w-md border border-solid border-zinc-200 bg-white py-4 shadow-lg">
+        <div className="max-w-md rounded border border-solid border-zinc-200 bg-white py-4 shadow-lg">
           <div className="mb-3 px-8 ">
+            {/* //TODO make small category text */}
             <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
             <p className="mb-4 text-sm text-zinc-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem eius praesentium ullam atque ducimus dolores quas
               tenetur maiores itaque. Quos.
             </p>
+            {/* //TODO delete this */}
             <a href="#">Read More »</a>
           </div>
+          {/* //TODO delete this */}
           <div className="border-t px-8 pt-3 text-xs text-zinc-400">
             <time>June 17, 2023</time>
             <span className="mx-1 font-bold">•</span>
