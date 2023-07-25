@@ -6,7 +6,7 @@ export default function Page() {
       {/* section-1 hero */}
       <section className="bg-black px-5 pb-12 pt-8 text-white md:flex md:gap-4 lg:px-12 lg:pb-28 xl:px-20 xl:pb-52 xl:pt-24 2xl:px-32 2xl:pb-80 2xl:pt-28">
         {/* caption */}
-        <div className="flex w-3/4 flex-initial flex-col gap-4">
+        <div className="flex flex-1 flex-col gap-4 xl:w-3/4 xl:flex-initial">
           <div>
             <h1 className="text-3xl font-bold capitalize md:text-5xl xl:text-6xl xl:leading-tight 2xl:text-7xl">
               killer copy <br /> comedic flair <br /> own your style
