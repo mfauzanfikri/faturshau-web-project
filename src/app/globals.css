@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-light {
+    @apply text-zinc-100;
+  }
+
+  .text-dark {
+    @apply text-zinc-950;
+  }
+
+  .text-color-500 {
+    @apply text-zinc-500;
+  }
+
+  .text-color-600 {
+    @apply text-zinc-600;
+  }
+
+  .bg-light {
+    @apply bg-zinc-100;
+  }
+
+  .bg-dark {
+    @apply bg-zinc-950;
+  }
+
+  .bg-color-50 {
+    @apply bg-zinc-50;
+  }
+
+  .bg-color-800 {
+    @apply bg-zinc-800;
+  }
+}
+
 body::-webkit-scrollbar {
   display: none;
 }

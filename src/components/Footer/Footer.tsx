@@ -19,7 +19,7 @@ const Footer = () => {
               placeholder="Email"
               className="w-3/4 min-w-[5rem] max-w-[18rem] rounded-md border border-slate-400 px-2 py-1 text-base"
             />
-            <button className="w-auto min-w-min rounded-md bg-black px-2.5 py-1.5 text-base text-white hover:bg-opacity-80">
+            <button className="text-light w-auto min-w-min rounded-md bg-black px-2.5 py-1.5 text-base hover:bg-opacity-80">
               Subscribe
             </button>
           </div>
@@ -31,7 +31,7 @@ const Footer = () => {
         <a
           href="https://twitter.com/thestorystylist"
           target="_blank"
-          className="flex aspect-square items-center rounded-full bg-black p-3 hover:cursor-pointer hover:bg-opacity-95 md:p-4"
+          className="bg-dark flex aspect-square items-center rounded-full p-3 hover:cursor-pointer hover:bg-opacity-95 md:p-4"
         >
           <svg
             className="w-6 fill-white md:w-8"
@@ -61,14 +61,14 @@ const Footer = () => {
             type="email"
             placeholder=">>> Your Best Email"
           />
-          <button className="rounded bg-black py-1.5 text-white">
+          <button className="text-light bg-dark rounded py-1.5">
             Subscribe
           </button>
         </div>
       </div>
 
       {/* bottom footer */}
-      <div className="flex justify-center bg-black py-1.5 text-center text-sm text-white md:py-3 md:text-base">
+      <div className="text-light bg-dark flex justify-center py-1.5 text-center text-sm md:py-3 md:text-base">
         <p>&#169; 2023 The Storystylist | All Rights Reserved.</p>
       </div>
     </footer>
