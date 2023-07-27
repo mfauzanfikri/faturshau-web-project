@@ -24,7 +24,7 @@
   }
 
   .bg-dark {
-    @apply bg-zinc-950;
+    @apply bg-zinc-900;
   }
 
   .bg-color-50 {
