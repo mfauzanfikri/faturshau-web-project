@@ -29,7 +29,7 @@ export default function Page() {
               type="email"
               placeholder=">>> Your Best Email"
             />
-            <button className="bg-color-800 text-light mt-4 rounded border border-zinc-400 py-1.5 font-bold md:text-lg lg:mt-0 lg:px-8">
+            <button className="text-light mt-4 rounded border border-zinc-400 bg-zinc-800 py-1.5 font-bold md:text-lg lg:mt-0 lg:px-8">
               Subscribe
             </button>
           </div>
@@ -53,7 +53,7 @@ export default function Page() {
       </section>
 
       {/* section-2 divider 1 */}
-      <section className="bg-color-800 text-light py-8 text-center">
+      <section className="text-light bg-zinc-800 py-8 text-center">
         <p className="uppercase tracking-[0.3em]">freebies</p>
         <h2 className="mb-1 text-4xl font-bold">Best of Blog</h2>
         <p>Best post on copywriting and mindset</p>
@@ -102,7 +102,7 @@ export default function Page() {
 
         <div className="flex justify-center">
           <a href="/blog" className="hover:opacity-95">
-            <button className="bg-color-800 text-light rounded border border-white px-2 py-1.5 font-semibold">
+            <button className="text-light rounded border border-white bg-zinc-800 px-2 py-1.5 font-semibold">
               See More
             </button>
           </a>
@@ -110,7 +110,7 @@ export default function Page() {
       </section>
 
       {/* section-4 divider */}
-      <section className="bg-color-800 text-light py-8 text-center">
+      <section className="text-light bg-zinc-800 py-8 text-center">
         <p className="uppercase tracking-[0.3em]">story</p>
         <h2 className="pb-1 text-4xl font-bold">Who is Fatur Shau?</h2>
         <p>Direct-response copywriter and mindset diver.</p>
@@ -138,7 +138,7 @@ export default function Page() {
       </section>
 
       {/* section-6 divider */}
-      <section className="bg-color-800 text-light px-1.5 py-8 text-center">
+      <section className="text-light bg-zinc-800 px-1.5 py-8 text-center">
         <p className="uppercase tracking-[0.3em]">3 ways i can help you</p>
         <h2 className="mt-2 pb-1 text-4xl font-bold">
           Hire me. <span className="hidden md:inline"> </span>
@@ -195,19 +195,19 @@ export default function Page() {
       </section>
 
       {/* section-8 divider */}
-      <section className="bg-color-800 text-light py-8 text-center">
+      <section className="text-light bg-zinc-800 py-8 text-center">
         <p className="uppercase tracking-[0.3em]">writing</p>
         <h2 className="pb-1 text-4xl font-bold">Read The Archives</h2>
         <p>Dives down on copywriting & comedy.</p>
       </section>
 
       {/* section-9 cards  */}
-      <section className="bg-color-50 mb-10 flex flex-col items-center justify-center gap-8 px-2.5 py-20 md:flex-row md:flex-wrap">
+      <section className="mb-10 flex flex-col items-center justify-center gap-8 bg-zinc-50 px-2.5 py-20 md:flex-row md:flex-wrap">
         <div className="max-w-md border-b border-zinc-400 py-4 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
           <div className="mb-3 px-8 ">
-            <p className="text-color-500 mb-1 text-xs">Category</p>
-            <h4 className="text-color-600 mb-4 text-xl font-bold">Test 1</h4>
-            <p className="text-color-500 mb-4 text-sm">
+            <p className="mb-1 text-xs text-zinc-500">Category</p>
+            <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
+            <p className="mb-4 text-sm text-zinc-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem eius praesentium ullam atque ducimus dolores quas
               tenetur maiores itaque. Quos.
@@ -217,9 +217,9 @@ export default function Page() {
 
         <div className="max-w-md border-b border-zinc-400 py-4 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
           <div className="mb-3 px-8 ">
-            <p className="text-color-500 mb-1 text-xs">Category</p>
-            <h4 className="text-color-600 mb-4 text-xl font-bold">Test 1</h4>
-            <p className="text-color-500 mb-4 text-sm">
+            <p className="mb-1 text-xs text-zinc-500">Category</p>
+            <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
+            <p className="mb-4 text-sm text-zinc-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem eius praesentium ullam atque ducimus dolores quas
               tenetur maiores itaque. Quos.
@@ -229,9 +229,9 @@ export default function Page() {
 
         <div className="max-w-md border-b border-zinc-400 py-4 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
           <div className="mb-3 px-8 ">
-            <p className="text-color-500 mb-1 text-xs">Category</p>
-            <h4 className="text-color-600 mb-4 text-xl font-bold">Test 1</h4>
-            <p className="text-color-500 mb-4 text-sm">
+            <p className="mb-1 text-xs text-zinc-500">Category</p>
+            <h4 className="mb-4 text-xl font-bold text-zinc-600">Test 1</h4>
+            <p className="mb-4 text-sm text-zinc-500">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem eius praesentium ullam atque ducimus dolores quas
               tenetur maiores itaque. Quos.

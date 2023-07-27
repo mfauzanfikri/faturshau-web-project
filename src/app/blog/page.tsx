@@ -24,21 +24,29 @@ const printBlogPost = (i: number) => {
 
 const page = () => {
   return (
-    <div className="mx-auto my-5 px-[5vw] lg:px-[8vw]">
-      {/* page header */}
-      <header className="flex h-72 flex-col items-center justify-center bg-slate-100 p-10 text-center text-slate-700">
-        <div className="max-w-lg">
-          <h1 className="text-3xl font-bold">Blog</h1>
-          <p className="mt-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-            consequuntur exercitationem vero ducimus eaque.
-          </p>
-        </div>
-      </header>
-
-      {/* section-1 blog posts */}
-      <section className="mt-14">{printBlogPost(4)}</section>
-    </div>
+    // section-1
+    <section className="bg-zinc-200 px-4 pb-6 pt-2">
+      <div>
+        <h1 className="text-3xl font-bold">Lorem ipsum dolor sit amet.</h1>
+        <p className="mb-2 mt-1 text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          exercitationem aut autem, illum suscipit esse?
+        </p>
+      </div>
+      <div>
+        <input
+          className="border-b border-b-zinc-400 bg-transparent p-3 text-sm focus:outline-none md:text-lg lg:w-3/5"
+          type="email"
+          placeholder=">>> Your Best Email"
+        />
+        <button className="text-light mt-4 rounded border border-zinc-400 bg-zinc-800 py-1.5 font-bold md:text-lg lg:mt-0 lg:px-8">
+          Subscribe
+        </button>
+      </div>
+    </section>
   );
 };
 

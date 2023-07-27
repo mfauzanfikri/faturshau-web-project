@@ -31,6 +31,14 @@
     @apply bg-zinc-50;
   }
 
+  .bg-color-200 {
+    @apply bg-zinc-200;
+  }
+
+  .bg-color-300 {
+    @apply bg-zinc-300;
+  }
+
   .bg-color-800 {
     @apply bg-zinc-800;
   }
