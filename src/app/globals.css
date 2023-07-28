@@ -26,22 +26,6 @@
   .bg-dark {
     @apply bg-zinc-900;
   }
-
-  .bg-color-50 {
-    @apply bg-zinc-50;
-  }
-
-  .bg-color-200 {
-    @apply bg-zinc-200;
-  }
-
-  .bg-color-300 {
-    @apply bg-zinc-300;
-  }
-
-  .bg-color-800 {
-    @apply bg-zinc-800;
-  }
 }
 
 body::-webkit-scrollbar {

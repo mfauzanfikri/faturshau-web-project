@@ -149,7 +149,7 @@ export default function Page() {
       </section>
 
       {/* section-7 offers cards */}
-      <section className="flex flex-col gap-12 px-8 py-20 md:flex-row md:flex-wrap md:justify-center md:gap-16 lg:gap-14">
+      <section className="flex flex-col gap-12 px-8 py-12 md:flex-row md:flex-wrap md:justify-center md:gap-16 lg:gap-14">
         {/* child-1 */}
         <div className="flex flex-col items-center gap-2 text-center md:w-[45%] lg:w-[30%]">
           <div className="aspect-square w-24 rounded-full bg-zinc-700"></div>
@@ -202,7 +202,7 @@ export default function Page() {
       </section>
 
       {/* section-9 cards  */}
-      <section className="mb-10 flex flex-col items-center justify-center gap-8 bg-zinc-50 px-2.5 py-20 md:flex-row md:flex-wrap">
+      <section className="mb-10 flex flex-col items-center justify-center gap-8 bg-zinc-50 px-2.5 py-12 md:flex-row md:flex-wrap">
         <div className="max-w-md border-b border-zinc-400 py-4 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
           <div className="mb-3 px-8 ">
             <p className="mb-1 text-xs text-zinc-500">Category</p>
