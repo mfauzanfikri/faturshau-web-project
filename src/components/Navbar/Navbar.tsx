@@ -80,18 +80,50 @@ const Navbar = () => {
           </div>
           {/* Desktop Nav Items */}
           <div className="hidden md:block">
-            <ul className="flex gap-4">
+            <ul className="flex gap-4 text-zinc-400">
               <li>
-                <a href="/blog">Blog</a>
+                <a
+                  href="/blog"
+                  className="cursor-default"
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  Blog
+                </a>
               </li>
               <li>
-                <a href="">Coppywriting</a>
+                <a
+                  href=""
+                  className="cursor-default"
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  Coppywriting
+                </a>
               </li>
               <li>
-                <a href="">Portfolio</a>
+                <a
+                  href=""
+                  className="cursor-default"
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  Portfolio
+                </a>
               </li>
               <li>
-                <a href="">Contact</a>
+                <a
+                  href=""
+                  className="cursor-default"
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -100,28 +132,52 @@ const Navbar = () => {
         <ul
           className={`bg-light absolute z-[-1] w-full shadow-lg md:hidden ${
             !isShown ? "-top-10 opacity-0" : "top-[52.5px] opacity-100"
-          } transition-all duration-300 ease-in`}
+          } text-zinc-400 transition-all duration-300 ease-in`}
         >
           <li>
-            <a href="/blog" className="mo inline-block w-full px-5 py-2">
+            <a
+              href="/blog"
+              className="inline-block w-full cursor-default px-5 py-2"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
               Blog
             </a>
             <hr className="mx-3" />
           </li>
           <li>
-            <a href="#" className="inline-block w-full px-5 py-2">
+            <a
+              href="#"
+              className="inline-block w-full cursor-default px-5 py-2"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
               Coppywriting
             </a>
             <hr className="mx-3" />
           </li>
           <li>
-            <a href="#" className="inline-block w-full px-5 py-2">
+            <a
+              href="#"
+              className="inline-block w-full cursor-default px-5 py-2"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
               Portfolio
             </a>
             <hr className="mx-3" />
           </li>
           <li>
-            <a href="#" className="inline-block w-full px-5 py-2">
+            <a
+              href="#"
+              className="inline-block w-full cursor-default px-5 py-2"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
               Contact
             </a>
           </li>
