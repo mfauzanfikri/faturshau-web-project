@@ -100,7 +100,7 @@ const Hero = () => {
                 aria-hidden="true"
                 className={`${
                   isDone && "hidden"
-                } mr-2 h-8 w-8 animate-spin fill-white text-gray-200 dark:text-gray-600`}
+                } mr-2 h-6 w-6 animate-spin fill-white text-gray-200 dark:text-gray-600 md:h-8 md:w-8`}
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,9 @@ const Hero = () => {
               </svg>
               {/* check */}
               <svg
-                className={`${!isDone && "hidden"} h-8 w-8 stroke-green-500`}
+                className={`${
+                  !isDone && "hidden"
+                } h-6 w-6 stroke-green-500 md:h-8 md:w-8`}
                 width="800px"
                 height="800px"
                 viewBox="0 0 24 24"
