@@ -1,4 +1,4 @@
-import Hero from "@/components/Blog/Hero";
+import Hero from "@/app/Hero";
 import Image from "next/image";
 
 export default function Page() {
