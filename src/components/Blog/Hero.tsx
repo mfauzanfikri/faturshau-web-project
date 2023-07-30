@@ -71,10 +71,10 @@ const Hero = () => {
       {/* caption */}
       <div className="flex flex-1 flex-col gap-4">
         <div>
-          <h1 className="text-3xl font-extrabold capitalize xl:text-6xl xl:leading-tight 2xl:text-8xl 2xl:leading-tight">
+          <h1 className="text-3xl font-extrabold capitalize md:text-4xl xl:text-6xl xl:leading-tight 2xl:text-8xl 2xl:leading-tight">
             killer copy <br /> comedic flair <br /> own your style
           </h1>
-          <p className="mb-2.5 mt-3 max-w-xs md:max-w-sm md:text-lg lg:mb-5 lg:mt-8 lg:max-w-xl xl:text-xl 2xl:max-w-2xl 2xl:text-2xl">
+          <p className="mb-2.5 mt-3 max-w-xs md:max-w-sm lg:mb-5 lg:mt-8 lg:max-w-xl xl:text-xl 2xl:max-w-2xl 2xl:text-2xl">
             Join the <b>1% stylish copywriters</b>. IF my DAILY emails don’t
             give you a single{" "}
             <b>
@@ -82,7 +82,7 @@ const Hero = () => {
             </b>{" "}
             … Call me a fraud* and unsubscribe.
           </p>
-          <p className="font-semibold italic md:text-lg xl:text-xl 2xl:text-2xl">
+          <p className="font-semibold italic xl:text-xl 2xl:text-2xl">
             Always join for free below.
           </p>
         </div>
@@ -155,17 +155,6 @@ const Hero = () => {
       </div>
 
       {/* hero image */}
-      {/* <div className="hidden lg:flex lg:flex-1 lg:items-end lg:justify-end">
-        <Image
-          src="/images/fatur_shau_alt_2.png"
-          width={500}
-          height={500}
-          alt="Fatur Shau"
-          className="h-full w-auto"
-          priority={true}
-        />
-      </div> */}
-
       <Image
         src="/images/fatur_shau_alt_2.png"
         width={1000}
