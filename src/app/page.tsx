@@ -35,8 +35,10 @@ export default function Page() {
                 fill="currentFill"
               />
             </svg>
-            <h2 className="text-7xl font-bold">COMING SOON!</h2>
-            <p className="text-lg text-zinc-600">
+            <h2 className="text-2xl font-bold lg:text-5xl xl:text-7xl">
+              COMING SOON!
+            </h2>
+            <p className="text-zinc-600 lg:text-lg 2xl:text-xl">
               Currently cooking contents in kitchen...
             </p>
           </div>
@@ -191,9 +193,11 @@ export default function Page() {
           <div className="flex flex-col items-center justify-center gap-2">
             {/* loading */}
 
-            <h2 className="text-7xl font-bold">COMING SOON!</h2>
+            <h2 className="text-2xl font-bold lg:text-5xl xl:text-7xl">
+              COMING SOON!
+            </h2>
             <div className="flex items-center justify-center gap-1">
-              <p className="text-lg text-zinc-600">
+              <p className="text-zinc-600 lg:text-lg 2xl:text-xl">
                 Currently cooking contents in kitchen
               </p>
               <svg
