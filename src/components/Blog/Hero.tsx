@@ -156,7 +156,7 @@ const Hero = () => {
 
       {/* hero image */}
       <Image
-        src="/images/fatur_shau_alt_2.png"
+        src="/images/fatur_shau_alt.png"
         width={1000}
         height={1000}
         alt="Fatur Shau"
