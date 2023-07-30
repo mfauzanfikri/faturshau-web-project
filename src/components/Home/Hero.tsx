@@ -1,9 +1,9 @@
 "use client";
 
 import { ChangeEvent, useState } from "react";
-import "./Blog.css";
 import Image from "next/image";
 import validator from "validator";
+import "./Home.css";
 
 const Hero = () => {
   const [input, setInput] = useState("");
