@@ -39,13 +39,10 @@ const Navbar = () => {
         <div className="text-light mx-auto flex items-center justify-between px-5 py-2 md:px-10 xl:px-16 2xl:px-28">
           {/* Logo */}
           <Link href="/" as={"image"}>
-            <Image
+            <img
               src="/images/logo.png"
-              width={500}
-              height={500}
               alt="logo"
               className="w-32 md:w-36 xl:w-40"
-              priority={true}
             />
           </Link>
           {/* Mobile Toggle */}
