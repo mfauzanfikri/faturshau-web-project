@@ -69,12 +69,12 @@ const Hero = () => {
   return (
     <section className="text-light relative overflow-hidden bg-zinc-950 px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-16 xl:pb-36 xl:pt-16 2xl:h-[calc(100vh-61.7px)] 2xl:px-36 2xl:pt-28">
       {/* caption */}
-      <div className="flex flex-1 flex-col justify-center gap-4">
+      <div className="flex flex-1 flex-col gap-4">
         <div>
-          <h1 className="text-3xl font-bold capitalize xl:text-[2.3rem] xl:leading-tight 2xl:text-7xl 2xl:leading-tight">
+          <h1 className="text-3xl font-extrabold capitalize xl:text-6xl xl:leading-tight 2xl:text-8xl 2xl:leading-tight">
             killer copy <br /> comedic flair <br /> own your style
           </h1>
-          <p className="mb-2.5 mt-3 max-w-xs md:max-w-sm md:text-lg lg:mb-5 lg:mt-8 lg:max-w-xl 2xl:max-w-2xl">
+          <p className="mb-2.5 mt-3 max-w-xs md:max-w-sm md:text-lg lg:mb-5 lg:mt-8 lg:max-w-xl xl:text-xl 2xl:max-w-2xl 2xl:text-2xl">
             Join the <b>1% stylish copywriters</b>. IF my DAILY emails don’t
             give you a single{" "}
             <b>
@@ -82,14 +82,14 @@ const Hero = () => {
             </b>{" "}
             … Call me a fraud* and unsubscribe.
           </p>
-          <p className="font-semibold italic md:text-lg">
+          <p className="font-semibold italic md:text-lg xl:text-xl 2xl:text-2xl">
             Always join for free below.
           </p>
         </div>
         <div className="relative flex flex-col gap-6 md:max-w-md lg:max-w-xl lg:flex-row">
           <div className="relative lg:w-3/5">
             <input
-              className="md:text-md w-full border-b border-b-zinc-400 bg-transparent p-3 text-sm focus:outline-none"
+              className="w-full border-b border-b-zinc-400 bg-transparent p-3 text-sm focus:outline-none md:text-base xl:text-lg"
               type="email"
               placeholder=">>> Your Best Email"
               onChange={handleInput}
@@ -140,13 +140,14 @@ const Hero = () => {
             disabled={isLoading && true}
             onClick={handleSubscribe}
             className="text-light md:text-md rounded border border-zinc-400
-            bg-zinc-800 py-1.5 font-bold hover:opacity-95 disabled:bg-zinc-900 lg:mt-0 lg:px-8"
+            bg-zinc-800 py-1.5 font-bold hover:opacity-95 disabled:bg-zinc-900 lg:mt-0 lg:px-8 xl:text-lg"
           >
             Subscribe
           </button>
         </div>
-        <div className="pt-4">
-          <p className="text-[8px] lg:text-xs">
+
+        <div className="pt-2">
+          <p className="text-[8px] lg:text-xs xl:text-base">
             *NO <u>PLEASE DON’T</u>! <br className="md:hidden" /> Just
             unsubscribe and go away in peace.
           </p>
