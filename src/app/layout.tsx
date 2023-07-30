@@ -24,7 +24,7 @@ export default function RootLayout({
     <html className={poppins.className} lang="en">
       <body className="text-dark bg-light flex min-h-screen flex-col">
         <Navbar />
-        <main className="mb-3 mt-[52.56px] md:mt-[57.14px] xl:mt-[61.7px]">
+        <main className="mb-3 mt-[52px] md:mt-[56px] xl:mt-[58.3px]">
           {children}
         </main>
         <Footer />
