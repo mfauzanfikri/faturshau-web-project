@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "600", "700"],
-  variable: "--font-poppins",
   fallback: ["sans-serif"],
 });
 
@@ -22,10 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={poppins.variable} lang="en">
-      <body className="text-dark bg-light flex min-h-screen flex-col font-poppins">
+    <html className={poppins.className} lang="en">
+      <body className="text-dark bg-light flex min-h-screen flex-col">
         <Navbar />
-        <main className="mb-3 mt-[52px]">{children}</main>
+        <main className="mb-3 mt-[52.56px] md:mt-[57.14px] xl:mt-[61.7px]">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -1,56 +1,11 @@
+import Hero from "@/components/Blog/Hero";
 import Image from "next/image";
 
 export default function Page() {
   return (
     <>
       {/* section-1 hero */}
-      <section className="bg-dark text-light px-5 pb-12 pt-8 md:flex md:gap-4 lg:px-12 lg:pb-28 xl:px-20 xl:pb-52 xl:pt-24 2xl:px-32 2xl:pb-80 2xl:pt-28">
-        {/* caption */}
-        <div className="flex flex-1 flex-col gap-4 xl:w-3/4 xl:flex-initial">
-          <div>
-            <h1 className="text-3xl font-bold capitalize md:text-5xl xl:text-6xl xl:leading-tight 2xl:text-7xl">
-              killer copy <br /> comedic flair <br /> own your style
-            </h1>
-            <p className="mb-2.5 mt-3 max-w-xs font-semibold md:max-w-sm md:text-xl lg:mb-5 lg:mt-8 lg:max-w-2xl 2xl:max-w-4xl">
-              Join the <b>1% stylish copywriters</b>. IF my DAILY emails don’t
-              give you a single{" "}
-              <b>
-                “<u>Haha Moment</u>“
-              </b>{" "}
-              … Call me a fraud* and unsubscribe.
-            </p>
-            <p className="font-semibold italic md:text-xl">
-              Always join for free below.
-            </p>
-          </div>
-          <div className="flex flex-col gap-6 md:max-w-md lg:max-w-xl lg:flex-row">
-            <input
-              className="border-b border-b-zinc-400 bg-transparent p-3 text-sm focus:outline-none md:text-lg lg:w-3/5"
-              type="email"
-              placeholder=">>> Your Best Email"
-            />
-            <button className="text-light mt-4 rounded border border-zinc-400 bg-zinc-800 py-1.5 font-bold md:text-lg lg:mt-0 lg:px-8">
-              Subscribe
-            </button>
-          </div>
-          <div className="pt-10">
-            <p className="text-[8px] lg:text-sm">
-              *NO <u>PLEASE DON’T</u>! <br className="md:hidden" /> Just
-              unsubscribe and go away in peace.
-            </p>
-          </div>
-        </div>
-        {/* hero image */}
-        <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-center">
-          <Image
-            src="/images/fatur_shau.png"
-            width={500}
-            height={500}
-            alt="Fatur Shau"
-            className="mx-auto w-64 rounded-full lg:w-72 xl:w-80"
-          />
-        </div>
-      </section>
+      <Hero />
 
       {/* section-2 divider 1 */}
       <section className="text-light bg-zinc-800 py-8 text-center">
@@ -61,7 +16,32 @@ export default function Page() {
 
       {/* section-3 services cards */}
       <section className="flex flex-col gap-8 px-5 pb-8 pt-3 text-slate-600 lg:pb-16 lg:pt-8">
-        <div className="flex flex-col gap-14 md:flex-row md:flex-wrap md:justify-center lg:gap-32">
+        <div className="flex w-full flex-1 items-center justify-center text-center">
+          <div className="text-dark flex h-96 flex-col items-center justify-center gap-2">
+            {/* loading */}
+            <svg
+              aria-hidden="true"
+              className={`mb-2 h-16 w-16 animate-spin fill-blue-500 text-zinc-400`}
+              viewBox="0 0 100 101"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                fill="currentColor"
+              />
+              <path
+                d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                fill="currentFill"
+              />
+            </svg>
+            <h2 className="text-7xl font-bold">COMING SOON!</h2>
+            <p className="text-lg text-zinc-600">
+              Currently cooking contents in kitchen...
+            </p>
+          </div>
+        </div>
+        {/* <div className="flex flex-col gap-14 md:flex-row md:flex-wrap md:justify-center lg:gap-32">
           <div className="md:w-[45%] lg:w-[22%]">
             <div className="group hover:cursor-pointer">
               <div className="aspect-square w-full bg-zinc-700"></div>
@@ -109,7 +89,7 @@ export default function Page() {
               See More
             </button>
           </a>
-        </div>
+        </div> */}
       </section>
 
       {/* section-4 divider */}
@@ -205,80 +185,37 @@ export default function Page() {
       </section>
 
       {/* section-9 cards  */}
-      <section className="relative mb-10 flex flex-col items-center justify-center gap-8 bg-zinc-50 px-2.5 py-12 md:flex-row md:flex-wrap">
-        <div className="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-10 overflow-hidden bg-white bg-opacity-70">
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
-          <h2 className="text-3xl font-bold">COMING SOON!</h2>
+      {/* mb-10 flex flex-col items-center justify-center gap-8 bg-zinc-50 px-2.5 py-12 md:flex-row md:flex-wrap */}
+      <section className="mb-10 flex items-center justify-center gap-8 bg-white px-2.5 py-12">
+        <div className="flex h-72 w-full flex-1 items-center justify-center text-center">
+          <div className="flex flex-col items-center justify-center gap-2">
+            {/* loading */}
+
+            <h2 className="text-7xl font-bold">COMING SOON!</h2>
+            <div className="flex items-center justify-center gap-1">
+              <p className="text-lg text-zinc-600">
+                Currently cooking contents in kitchen
+              </p>
+              <svg
+                aria-hidden="true"
+                className={`h-8 w-8 animate-spin fill-blue-500 text-zinc-400`}
+                viewBox="0 0 100 101"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                  fill="currentFill"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
-        <div className="max-w-md border-b border-zinc-400 py-4 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
+        {/* <div className="max-w-md border-b border-zinc-400 py-4 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
           <div className="mb-3 px-8 ">
             <p className="mb-1 text-xs text-zinc-500">Category</p>
             <h4 className="mb-4 text-xl font-bold text-zinc-600">Blog Title</h4>
@@ -312,7 +249,7 @@ export default function Page() {
               tenetur maiores itaque. Quos.
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

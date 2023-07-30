@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
@@ -34,11 +35,11 @@ const Navbar = () => {
   };
   return (
     <div className="fixed left-0 top-0 z-50 w-full">
-      <nav ref={navRef} className="bg-dark relative shadow-lg">
+      <nav ref={navRef} className="relative bg-zinc-950 shadow-lg">
         <div className="text-light mx-auto flex items-center justify-between px-5 py-2 md:px-10 xl:px-16 2xl:px-28">
           {/* Logo */}
           <div>
-            <a href="/">
+            <Link href="/" as={"image"}>
               <Image
                 src="/images/logo.png"
                 width={500}
@@ -47,7 +48,7 @@ const Navbar = () => {
                 className="w-32 md:w-36 xl:w-40"
                 priority={true}
               />
-            </a>
+            </Link>
           </div>
           {/* Mobile Toggle */}
           <div className="flex items-center md:hidden">
@@ -82,7 +83,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex gap-4 text-zinc-400">
               <li>
-                <a
+                <Link
                   href="/blog"
                   className="cursor-default"
                   onClick={(e) => {
@@ -90,10 +91,10 @@ const Navbar = () => {
                   }}
                 >
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href=""
                   className="cursor-default"
                   onClick={(e) => {
@@ -101,10 +102,10 @@ const Navbar = () => {
                   }}
                 >
                   Coppywriting
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href=""
                   className="cursor-default"
                   onClick={(e) => {
@@ -112,10 +113,10 @@ const Navbar = () => {
                   }}
                 >
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href=""
                   className="cursor-default"
                   onClick={(e) => {
@@ -123,7 +124,7 @@ const Navbar = () => {
                   }}
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -135,7 +136,7 @@ const Navbar = () => {
           } text-zinc-400 transition-all duration-300 ease-in`}
         >
           <li>
-            <a
+            <Link
               href="/blog"
               className="inline-block w-full cursor-default px-5 py-2"
               onClick={(e) => {
@@ -143,11 +144,11 @@ const Navbar = () => {
               }}
             >
               Blog
-            </a>
+            </Link>
             <hr className="mx-3" />
           </li>
           <li>
-            <a
+            <Link
               href="#"
               className="inline-block w-full cursor-default px-5 py-2"
               onClick={(e) => {
@@ -155,11 +156,11 @@ const Navbar = () => {
               }}
             >
               Coppywriting
-            </a>
+            </Link>
             <hr className="mx-3" />
           </li>
           <li>
-            <a
+            <Link
               href="#"
               className="inline-block w-full cursor-default px-5 py-2"
               onClick={(e) => {
@@ -167,11 +168,11 @@ const Navbar = () => {
               }}
             >
               Portfolio
-            </a>
+            </Link>
             <hr className="mx-3" />
           </li>
           <li>
-            <a
+            <Link
               href="#"
               className="inline-block w-full cursor-default px-5 py-2"
               onClick={(e) => {
@@ -179,7 +180,7 @@ const Navbar = () => {
               }}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
