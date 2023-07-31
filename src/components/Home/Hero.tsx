@@ -112,7 +112,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="relative flex flex-col gap-4 md:max-w-md lg:max-w-xl lg:flex-row">
+        <div className="relative flex flex-col md:max-w-md lg:max-w-xl lg:flex-row lg:gap-4">
           <div className="relative lg:w-3/5">
             <input
               className="w-full border-b border-b-zinc-400 bg-transparent p-3 text-sm focus:outline-none md:text-base xl:text-lg"
@@ -121,6 +121,21 @@ const Hero = () => {
               onChange={handleInput}
               ref={heroInputRef}
             />
+
+            <p
+              className={`${
+                isError || !isValid || isDone ? "visible" : "invisible"
+              } mt-2 -translate-y-2 text-xs lg:hidden ${
+                isError || !isValid ? "text-red-700" : "text-green-600"
+              }`}
+            >
+              <span className="invisible">a</span>
+              {isError && "There’s something wrong. Try again later."}
+              <br className={`${isError && !isValid ? "" : "hidden"}`} />
+              {!isValid && "Email is not valid. Try again later."}
+              {isDone &&
+                "Success! Now check your email to confirm your subscription."}
+            </p>
 
             <div className={`absolute right-0 top-2 ${!isLoading && "hidden"}`}>
               {/* loading */}
@@ -177,7 +192,7 @@ const Hero = () => {
         <p
           className={`${
             isError || !isValid || isDone ? "visible" : "invisible"
-          } mt-1 -translate-y-2 text-xs ${
+          } mt-1 hidden -translate-y-2 text-xs lg:block ${
             isError || !isValid ? "text-red-700" : "text-green-600"
           }`}
         >

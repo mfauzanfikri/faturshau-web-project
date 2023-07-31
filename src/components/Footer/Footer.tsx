@@ -1,29 +1,10 @@
+import FooterForm from "./FooterForm";
+import MobileFooterForm from "./MobileFooterForm";
+
 const Footer = () => {
   return (
     <footer className="mt-auto">
-      {/* subscribe card container */}
-      <div className="hidden w-full items-center justify-center py-20 lg:flex">
-        {/* subscribe card content  */}
-        <div className="flex w-4/5 max-w-2xl flex-col gap-2 rounded border border-slate-300 bg-gray-50 px-8 py-20 text-center shadow-md shadow-slate-600">
-          <div className="flex flex-col gap-2 text-center">
-            <h2 className="text-4xl font-bold">Stay Tuned</h2>
-            <p className="text-base">
-              Subscribe to our newsletter to hear the latest news
-            </p>
-          </div>
-          {/* subscribe input */}
-          <div className="mt-2 flex items-center justify-center gap-1.5">
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-3/4 min-w-[5rem] max-w-[18rem] rounded-md border border-slate-400 px-2 py-1 text-base"
-            />
-            <button className="text-light w-auto min-w-min rounded-md bg-black px-2.5 py-1.5 text-base hover:bg-opacity-80">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+      <FooterForm />
 
       {/* contact */}
       <div className="my-2 flex justify-center">
@@ -42,29 +23,7 @@ const Footer = () => {
         </a>
       </div>
 
-      {/* mobile subsribe form */}
-      <div className="mb-8 flex flex-col gap-1.5 px-8 py-2 lg:hidden">
-        <div className="py-2 text-center">
-          <h2 className="mb-1.5 text-xl font-bold">
-            1 online growth tip in less than 4 minutes.
-          </h2>
-          <p className="mb-1 text-base">
-            Every Saturday morning, you&apos;ll get 1 actionable tip to help
-            launch, grow, and monetize your internet business.
-          </p>
-          <p>Join 115k subscribers below.</p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <input
-            className="rounded border border-transparent border-b-slate-400 p-3 text-sm focus:border-slate-400 focus:outline-0"
-            type="email"
-            placeholder=">>> Your Best Email"
-          />
-          <button className="text-light bg-dark rounded py-1.5">
-            Subscribe
-          </button>
-        </div>
-      </div>
+      <MobileFooterForm />
 
       {/* bottom footer */}
       <div className="text-light bg-dark flex justify-center py-1.5 text-center text-sm md:py-3 md:text-base">
