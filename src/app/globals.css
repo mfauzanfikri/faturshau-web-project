@@ -28,6 +28,10 @@
   }
 }
 
+* {
+  overscroll-behavior: none;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }

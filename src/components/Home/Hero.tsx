@@ -92,7 +92,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="text-light relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:min-h-[calc(100dvh-70.96px)] 2xl:px-36 2xl:pt-28">
+    <section className="text-light relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:min-h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-28">
       {/* caption */}
       <div className="z-10 flex flex-1 flex-col gap-4">
         <div>
