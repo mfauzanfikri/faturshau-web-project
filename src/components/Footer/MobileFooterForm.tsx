@@ -97,7 +97,7 @@ const MobileFooterForm = () => {
       {/* mobile subsribe form */}
       <div className="mb-8 flex flex-col gap-1.5 px-8 py-2 lg:hidden">
         <div className="py-2 text-center">
-          <h2 className="mb-1.5 text-lg font-bold">
+          <h2 className="mb-1.5 text-2xl font-bold">
             Delivering one “Haha-Moment” in copywriting business every day.
           </h2>
           <p className="mb-1 text-xs">
