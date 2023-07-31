@@ -43,14 +43,17 @@ const Hero = () => {
       })
       .then((res) => {
         if (res.error) {
-          console.log(res.error);
-          setIsError(true);
           setIsLoading(false);
+          setIsError(true);
 
           if (heroInputRef.current) {
             heroInputRef.current.value = "";
             setInput("");
           }
+
+          setTimeout(() => {
+            setIsError(false);
+          }, 2000);
 
           return false;
         }

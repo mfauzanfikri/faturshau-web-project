@@ -41,14 +41,17 @@ const FooterForm = () => {
       })
       .then((res) => {
         if (res.error) {
-          console.log(res.error);
-          setIsError(true);
           setIsLoading(false);
+          setIsError(true);
 
           if (inputRef.current) {
             inputRef.current.value = "";
             setInput("");
           }
+
+          setTimeout(() => {
+            setIsError(false);
+          }, 2000);
 
           return false;
         }
