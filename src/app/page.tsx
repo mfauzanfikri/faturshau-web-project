@@ -36,11 +36,11 @@ export default function Page() {
                 fill="currentFill"
               />
             </svg>
-            <h2 className="max-w-2xl text-xl font-bold md:text-2xl lg:text-5xl lg:leading-tight xl:text-6xl">
+            <h2 className="max-w-2xl text-xl font-bold md:text-2xl lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight">
               I’m cooking with <br className="hidden xl:block" /> Mr. White
               right now!
             </h2>
-            <p className="text-sm text-zinc-600 md:text-lg lg:text-xl 2xl:text-2xl">
+            <p className="text-sm text-zinc-600 md:text-lg lg:text-xl xl:text-2xl">
               We’ll come back with the purest Ice Copy you’ve ever tasted.
             </p>
           </div>
@@ -215,7 +215,7 @@ export default function Page() {
               Action Speaks Louder <br className="hidden xl:block" /> Than
               Words!
             </h2>
-            <p className="max-w-md text-sm text-zinc-600 md:text-lg lg:max-w-xl lg:text-xl 2xl:text-2xl">
+            <p className="max-w-md text-sm text-zinc-600 md:text-lg lg:max-w-xl lg:text-xl xl:text-2xl">
               Dear Homie… <br />
               Come back soon as Mr. White and I (now with a little help from
               Pinkman) cook the ins and outs of copywriting Ice Copy just for
