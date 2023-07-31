@@ -218,7 +218,7 @@ const Hero = () => {
         width={2745}
         height={3750}
         alt="Fatur Shau"
-        className="absolute bottom-0 right-12 z-0 hidden h-[95%] w-auto lg:block xl:right-24 2xl:right-36"
+        className="absolute bottom-0 right-12 z-0 hidden h-[99%] w-auto lg:block xl:right-24 2xl:right-36"
         priority={true}
       />
     </section>
