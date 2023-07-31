@@ -1,6 +1,6 @@
 "use client";
 
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useRef, useState } from "react";
 import Image from "next/image";
 import validator from "validator";
 import "./Home.css";
@@ -9,10 +9,12 @@ const Hero = () => {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isDone, setIsDone] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [isValid, setIsValid] = useState(true);
+  const [isEmpty, setIsEmpty] = useState(true);
+  const heroInputRef = useRef<HTMLInputElement>(null);
 
   const handleSubscribe = () => {
-    let data;
-
     if (input === "") {
       console.log("input empty");
       return false;
@@ -22,56 +24,79 @@ const Hero = () => {
       console.log("input is not an email");
       return false;
     }
-    console.log(isLoading);
+
     setIsLoading(true);
 
-    fetch("https://api.convertkit.com/v3/forms?api_key=cskDra9H5n8_PWXK4NIXeA")
+    fetch(`https://api.convertkit.com/v3/forms/5429216/subscribe`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+      },
+      body: JSON.stringify({
+        api_key: process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY,
+        email: input,
+      }),
+    })
       .then(async (res) => {
         const data = await res.json();
-
         return data;
       })
       .then((res) => {
+        if (res.error) {
+          console.log(res.error);
+          setIsError(true);
+          setIsLoading(false);
+
+          if (heroInputRef.current) {
+            heroInputRef.current.value = "";
+            setInput("");
+          }
+
+          return false;
+        }
+
         console.log(res);
         setIsDone(true);
-      })
-      .finally(() => {
         setTimeout(() => {
-          setIsLoading(false);
           setIsDone(false);
-        }, 2500);
+        }, 3000);
+        setIsLoading(false);
+
+        if (heroInputRef.current) {
+          heroInputRef.current.value = "";
+          setInput("");
+        }
       });
-
-    console.log("input valid. Input: " + input);
-
-    // const response = await fetch(
-    //   "https://api.convertkit.com/v3/forms/5429265/subscribe",
-    //   {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json; charset=utf-8",
-    //     },
-    //     body: JSON.stringify({
-    //       api_key: "cskDra9H5n8_PWXK4NIXeA",
-    //       email: "mfauzanfikri55@gmail.com",
-    //     }),
-    //   },
-    // );
-    // const data = await response.json();
-    // console.log({ data });
   };
 
   const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
+    if (isError) {
+      setIsError(false);
+    }
+
     const email = e.target.value;
+
+    if (email !== "") {
+      setIsEmpty(false);
+    } else {
+      setIsEmpty(true);
+    }
+
+    if (!validator.isEmail(email) && email !== "") {
+      setIsValid(false);
+    } else {
+      setIsValid(true);
+    }
+
     setInput(email);
   };
 
   return (
-    <section className="text-light relative overflow-hidden bg-zinc-950 px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-16 xl:pb-36 xl:pt-16 2xl:h-[calc(100vh-61.7px)] 2xl:px-36 2xl:pt-28">
+    <section className="text-light relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-16 xl:pb-36 xl:pt-16 2xl:min-h-[calc(100dvh-70.96px)] 2xl:px-36 2xl:pt-28">
       {/* caption */}
       <div className="flex flex-1 flex-col gap-4">
         <div>
-          <h1 className="text-3xl font-extrabold capitalize md:text-4xl xl:text-6xl xl:leading-tight 2xl:text-8xl 2xl:leading-tight">
+          <h1 className="text-3xl font-extrabold capitalize md:text-4xl xl:text-5xl xl:leading-tight 2xl:text-7xl 2xl:leading-tight">
             killer copy <br /> comedic flair <br /> own your style
           </h1>
           <p className="mb-2.5 mt-3 max-w-xs md:max-w-sm lg:mb-5 lg:mt-8 lg:max-w-xl xl:text-xl 2xl:max-w-2xl 2xl:text-2xl">
@@ -86,14 +111,17 @@ const Hero = () => {
             Always join for free below.
           </p>
         </div>
-        <div className="relative flex flex-col gap-6 md:max-w-md lg:max-w-xl lg:flex-row">
+
+        <div className="relative flex flex-col gap-4 md:max-w-md lg:max-w-xl lg:flex-row">
           <div className="relative lg:w-3/5">
             <input
               className="w-full border-b border-b-zinc-400 bg-transparent p-3 text-sm focus:outline-none md:text-base xl:text-lg"
               type="email"
               placeholder=">>> Your Best Email"
               onChange={handleInput}
+              ref={heroInputRef}
             />
+
             <div className={`absolute right-0 top-2 ${!isLoading && "hidden"}`}>
               {/* loading */}
               <svg
@@ -137,16 +165,31 @@ const Hero = () => {
           </div>
           {/* subscribe button */}
           <button
-            disabled={isLoading && true}
+            disabled={(isLoading || isEmpty) && true}
             onClick={handleSubscribe}
             className="text-light md:text-md rounded border border-zinc-400
-            bg-zinc-800 py-1.5 font-bold hover:opacity-95 disabled:bg-zinc-900 lg:mt-0 lg:px-8 xl:text-lg"
+            bg-zinc-800 py-1.5 font-bold hover:opacity-95 disabled:bg-zinc-900 disabled:text-zinc-300 lg:mt-0 lg:px-8 xl:text-lg"
           >
             Subscribe
           </button>
         </div>
 
-        <div className="pt-2">
+        <p
+          className={`${
+            isError || !isValid || isDone ? "visible" : "invisible"
+          } mt-1 -translate-y-2 text-xs ${
+            isError || !isValid ? "text-red-700" : "text-green-600"
+          }`}
+        >
+          <span className="invisible">a</span>
+          {isError && "There’s something wrong. Try again later."}
+          <br className={`${isError && !isValid ? "" : "hidden"}`} />
+          {!isValid && "Email is not valid. Try again later."}
+          {isDone &&
+            "Success! Now check your email to confirm your subscription."}
+        </p>
+
+        <div className="pt-4">
           <p className="text-[8px] lg:text-xs xl:text-base">
             *NO <u>PLEASE DON’T</u>! <br className="md:hidden" /> Just
             unsubscribe and go away in peace.
@@ -160,7 +203,7 @@ const Hero = () => {
         width={1000}
         height={1000}
         alt="Fatur Shau"
-        className="absolute bottom-0 right-0 z-0 hidden h-[90%] w-auto lg:block xl:right-16 2xl:right-20"
+        className="absolute bottom-0 right-0 z-0 hidden h-[95%] w-auto lg:block"
         priority={true}
       />
     </section>
