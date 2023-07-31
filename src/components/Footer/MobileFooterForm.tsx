@@ -98,13 +98,12 @@ const MobileFooterForm = () => {
       <div className="mb-8 flex flex-col gap-1.5 px-8 py-2 lg:hidden">
         <div className="py-2 text-center">
           <h2 className="mb-1.5 text-xl font-bold">
-            1 online growth tip in less than 4 minutes.
+            Delivering one “Haha-Moment” in copywriting business every day.
           </h2>
-          <p className="mb-1 text-base">
-            Every Saturday morning, you&apos;ll get 1 actionable tip to help
-            launch, grow, and monetize your internet business.
+          <p className="mb-1 text-xs">
+            Join the 1% stylish copywriters getting one laugh while learning
+            today’s copywriting lessons.
           </p>
-          <p>Join 115k subscribers below.</p>
         </div>
         <div className="flex flex-col">
           <input
