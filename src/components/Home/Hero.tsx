@@ -92,9 +92,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="text-light relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-16 xl:pb-36 xl:pt-16 2xl:min-h-[calc(100dvh-70.96px)] 2xl:px-36 2xl:pt-28">
+    <section className="text-light relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:min-h-[calc(100dvh-70.96px)] 2xl:px-36 2xl:pt-28">
       {/* caption */}
-      <div className="flex flex-1 flex-col gap-4">
+      <div className="z-10 flex flex-1 flex-col gap-4">
         <div>
           <h1 className="text-3xl font-extrabold capitalize md:text-4xl xl:text-5xl xl:leading-tight 2xl:text-7xl 2xl:leading-tight">
             killer copy <br /> comedic flair <br /> own your style
@@ -215,10 +215,10 @@ const Hero = () => {
       {/* hero image */}
       <Image
         src="/images/fatur_shau_alt.png"
-        width={1000}
-        height={1000}
+        width={2745}
+        height={3750}
         alt="Fatur Shau"
-        className="absolute bottom-0 right-0 z-0 hidden h-[95%] w-auto lg:block"
+        className="absolute bottom-0 right-12 z-0 hidden h-[95%] w-auto lg:block xl:right-24 2xl:right-36"
         priority={true}
       />
     </section>

@@ -30,7 +30,7 @@ export default function RootLayout({
 
       <body className="text-dark bg-light flex min-h-screen flex-col font-poppins">
         <Navbar />
-        <main className="mb-3 mt-[60.64px] md:mt-[64px] lg:mt-[65.8px] xl:mt-[70.96px]">
+        <main className="mb-3 mt-[60.64px] md:mt-[64px] lg:mt-[65.8px] xl:mt-[70.95px]">
           {children}
         </main>
         <Footer />
