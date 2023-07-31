@@ -95,7 +95,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="text-light relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:min-h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-28">
+    <section className="text-light relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:min-h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-32">
       {/* caption */}
       <div className="z-10 flex flex-1 flex-col gap-4">
         <div>
@@ -112,7 +112,7 @@ const Hero = () => {
             … Call me a fraud* <br className="hidden sm:block" /> and
             unsubscribe.
           </p>
-          <p className="font-semibold italic xl:text-xl 2xl:text-2xl">
+          <p className="text-sm font-semibold italic md:text-base xl:text-xl 2xl:text-2xl">
             Always join for free below.
           </p>
         </div>
@@ -187,7 +187,7 @@ const Hero = () => {
           <button
             disabled={(isLoading || isEmpty) && true}
             onClick={handleSubscribe}
-            className="md:text-md bg-light text-dark rounded border py-1.5
+            className="md:text-md bg-light text-dark rounded py-1.5
             font-bold hover:opacity-95 disabled:bg-zinc-200 disabled:text-zinc-900 lg:mt-0 lg:px-8 xl:text-lg"
           >
             Subscribe
