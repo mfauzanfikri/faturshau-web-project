@@ -205,7 +205,7 @@ const Hero = () => {
         </p>
 
         <div className="pt-4">
-          <p className="text-[8px] lg:text-xs xl:text-base">
+          <p className="text-[8px] lg:text-xs xl:text-sm">
             *NO <u>PLEASE DON’T</u>! <br className="md:hidden" /> Just
             unsubscribe and go away in peace.
           </p>
