@@ -95,45 +95,51 @@ const MobileFooterForm = () => {
   return (
     <>
       {/* mobile subsribe form */}
-      <div className="mb-8 flex flex-col gap-1.5 px-8 py-2 lg:hidden">
-        <div className="py-2 text-center">
-          <h2 className="mb-1.5 text-2xl font-bold">
+      <div className="mb-8 flex flex-col gap-1.5 px-6 py-2 md:px-16 lg:hidden">
+        <div className="flex flex-col items-center py-2 text-center">
+          <h2 className="mb-1.5 text-xl font-bold md:max-w-md">
             Delivering one “Haha-Moment” in copywriting business every day.
           </h2>
-          <p className="mb-1 text-xs">
+          <p className="mb-1 text-xs md:max-w-sm">
             Join the 1% stylish copywriters getting one laugh while learning
             today’s copywriting lessons.
           </p>
         </div>
-        <div className="flex flex-col">
-          <input
-            className="rounded border border-transparent border-b-slate-400 p-3 text-sm focus:border-slate-400 focus:outline-0"
-            type="email"
-            placeholder=">>> Your Best Email"
-            ref={inputRef}
-            onChange={handleInput}
-          />
-          <p
-            className={`${
-              isError || !isValid || isDone ? "visible" : "invisible"
-            } mt-2 -translate-y-2 text-xs ${
-              isError || !isValid ? "text-red-700" : "text-green-600"
-            }`}
-          >
-            <span className="invisible">a</span>
-            {isError && "There’s something wrong. Try again later."}
-            <br className={`${isError && !isValid ? "" : "hidden"}`} />
-            {!isValid && "Email is not valid. Try again later."}
-            {isDone &&
-              "Success! Now check your email to confirm your subscription."}
-          </p>
-          <button
-            className="text-light bg-dark rounded py-1.5 disabled:bg-zinc-900 disabled:text-zinc-300"
-            disabled={(isLoading || isEmpty) && true}
-            onClick={handleSubscribe}
-          >
-            Subscribe
-          </button>
+        <div className="flex flex-col md:items-center">
+          <div className="md:w-3/5">
+            <input
+              className="w-full rounded border border-transparent border-b-slate-400 p-3 text-sm focus:border-slate-400 focus:outline-0"
+              type="email"
+              placeholder=">>> Your Best Email"
+              ref={inputRef}
+              onChange={handleInput}
+            />
+          </div>
+          <div>
+            <p
+              className={`${
+                isError || !isValid || isDone ? "visible" : "invisible"
+              } mt-2 -translate-y-2 text-xs ${
+                isError || !isValid ? "text-red-700" : "text-green-600"
+              }`}
+            >
+              <span className="invisible">a</span>
+              {isError && "There’s something wrong. Try again later."}
+              <br className={`${isError && !isValid ? "" : "hidden"}`} />
+              {!isValid && "Email is not valid. Try again later."}
+              {isDone &&
+                "Success! Now check your email to confirm your subscription."}
+            </p>
+          </div>
+          <div className="md:w-3/5">
+            <button
+              className="text-light bg-dark w-full rounded py-1.5 disabled:bg-zinc-900 disabled:text-zinc-300"
+              disabled={(isLoading || isEmpty) && true}
+              onClick={handleSubscribe}
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
       </div>
     </>

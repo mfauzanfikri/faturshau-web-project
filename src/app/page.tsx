@@ -36,7 +36,7 @@ export default function Page() {
                 fill="currentFill"
               />
             </svg>
-            <h2 className="max-w-2xl text-xl font-bold md:text-2xl lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight">
+            <h2 className="max-w-2xl text-2xl font-bold md:text-2xl lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight">
               I’m cooking with <br className="hidden xl:block" /> Mr. White
               right now!
             </h2>
@@ -211,7 +211,7 @@ export default function Page() {
                 fill="currentFill"
               />
             </svg>
-            <h2 className="text-xl font-bold md:text-2xl lg:text-5xl lg:leading-tight xl:text-6xl">
+            <h2 className="text-2xl font-bold md:text-2xl lg:text-5xl lg:leading-tight xl:text-6xl">
               Action Speaks Louder <br className="hidden xl:block" /> Than
               Words!
             </h2>
