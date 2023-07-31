@@ -185,8 +185,8 @@ const Hero = () => {
           <button
             disabled={(isLoading || isEmpty) && true}
             onClick={handleSubscribe}
-            className="text-light md:text-md rounded border border-zinc-400
-            bg-zinc-800 py-1.5 font-bold hover:opacity-95 disabled:bg-zinc-900 disabled:text-zinc-300 lg:mt-0 lg:px-8 xl:text-lg"
+            className="md:text-md bg-light text-dark rounded border py-1.5
+            font-bold hover:opacity-95 disabled:bg-zinc-200 disabled:text-zinc-900 lg:mt-0 lg:px-8 xl:text-lg"
           >
             Subscribe
           </button>
@@ -221,7 +221,7 @@ const Hero = () => {
         width={2745}
         height={3750}
         alt="Fatur Shau"
-        className="absolute bottom-0 right-12 z-0 hidden h-[99%] w-auto lg:block xl:right-24 2xl:right-36"
+        className="absolute bottom-0 right-12 z-0 hidden h-[95%] w-auto lg:block xl:right-24 2xl:right-36"
         priority={true}
       />
     </section>
