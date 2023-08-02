@@ -246,9 +246,6 @@ export default function Page() {
             You’ll{" "}
             <span className="font-semibold underline">
               learn everything I know about copywriting (the right way).
-            </span>
-            <span className="font-semibold underline">
-              learn everything I know about copywriting (the right way).
             </span>{" "}
             I spent THOUSANDS of dollars and hours of sleepless nights for this.
             And{" "}
