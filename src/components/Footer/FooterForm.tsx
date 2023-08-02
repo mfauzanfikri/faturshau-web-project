@@ -99,10 +99,10 @@ const FooterForm = () => {
         {/* subscribe card content  */}
         <div className="flex w-4/5 max-w-2xl flex-col gap-2 rounded border border-slate-300 bg-gray-50 px-8 py-20 text-center shadow-md shadow-slate-600">
           <div className="flex flex-col gap-2 text-center">
-            <h2 className="text-2xl font-bold">
+            <h3 className="text-2xl font-bold">
               Delivering one “Haha-Moment” in copywriting business every day.
-            </h2>
-            <p className="text-sm">
+            </h3>
+            <p>
               Join the 1% stylish copywriters getting one laugh while learning
               today’s copywriting lessons.
             </p>

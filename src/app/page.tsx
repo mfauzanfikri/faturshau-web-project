@@ -36,15 +36,16 @@ export default function Page() {
                 fill="currentFill"
               />
             </svg>
-            <h2 className="max-w-2xl text-2xl font-bold md:text-2xl lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight">
+            <h2 className="max-w-2xl text-4xl font-bold lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight">
               I’m cooking with <br className="hidden xl:block" /> Mr. White
               right now!
             </h2>
-            <p className="text-sm text-zinc-600 md:text-lg lg:text-xl xl:text-2xl">
+            <p className="text-zinc-600 md:text-lg lg:text-xl xl:text-2xl">
               We’ll come back with the purest Ice Copy you’ve ever tasted.
             </p>
           </div>
         </div>
+
         {/* <div className="flex flex-col gap-14 md:flex-row md:flex-wrap md:justify-center lg:gap-32">
           <div className="md:w-[45%] lg:w-[22%]">
             <div className="group hover:cursor-pointer">
@@ -104,23 +105,67 @@ export default function Page() {
       </section>
 
       {/* section-5 author */}
-      <section className="mb-12 mt-6 px-5">
-        <div className="flex flex-col items-center md:flex-row md:flex-wrap">
-          <div className="relative aspect-square w-64 md:flex md:w-1/2 md:items-center md:justify-center">
-            <Image
-              src="/images/fatur_shau.png"
-              width={500}
-              height={500}
-              alt="Fatur Shau"
-              className="-z-10 mx-auto w-full rounded-full md:w-1/2"
-            />
-            <div className="absolute right-12 top-1/2 hidden h-1/2 w-[0.1rem] -translate-y-1/2 bg-black md:block"></div>
-          </div>
-          <div className="md:w-1/2 md:justify-start md:self-stretch">
-            <p className="mt-4 font-semibold md:text-lg lg:text-xl">
-              Hey. I’m Shau. Fatur Shau.
-            </p>
-          </div>
+      <section className="mx-auto my-12 flex max-w-xl flex-col items-center justify-center px-5 lg:max-w-7xl lg:flex-row lg:flex-wrap">
+        {/* image */}
+        <div className="relative w-full self-stretch lg:flex lg:w-[35%] lg:items-center lg:justify-center">
+          <Image
+            src="/images/fatur_shau.png"
+            width={500}
+            height={500}
+            alt="Fatur Shau"
+            className="-z-10 mx-auto w-56 rounded-full lg:w-56 xl:w-72"
+          />
+          <div className="absolute right-[2%] top-1/2 hidden h-[95%] w-[0.1rem] -translate-y-1/2 bg-black lg:block"></div>
+        </div>
+        {/* contents */}
+        <div className="p-5 lg:w-[65%] lg:justify-start lg:self-stretch">
+          <h2 className="text-2xl font-bold lg:text-3xl">
+            Hey. I’m Shau. Fatur Shau.
+          </h2>
+
+          <p className="font-semibold lg:text-lg">
+            I’m the Storystylist Copywriter and aspiring comedian.
+          </p>
+
+          <p className="mt-4 lg:text-lg">
+            I’m Indonesia’s funniest copywriter in 3 years! <br />
+            OR{" "}
+            <span className="font-semibold underline">
+              you’ll never know about me.
+            </span>{" "}
+            I’ll make everything about &quot;thestorystylist&quot; nonexistent.
+            Just like the bird on X.
+          </p>
+
+          <p className="mt-4 text-sm lg:text-base">
+            (How does the bird sound? “Chirp! Chirp! Chirp? Tweeeeeettt?
+            Exactly! Nothing.)
+          </p>
+
+          <p className="mt-4 lg:text-lg">Out of seriousness...</p>
+
+          <p className="mt-4 lg:text-lg">
+            I’m a Founder of Coppywriting and Co-Founder of a local café.
+          </p>
+
+          <p className="mt-4 lg:text-lg">
+            In other words: I help businesses sell more with the power of word &
+            style.
+          </p>
+
+          <p className="mt-4 lg:text-lg">Don’t believe me?</p>
+
+          <p className="mt-4 lg:text-lg">Try it yourself!</p>
+
+          <p className="mt-4 font-semibold lg:text-lg">
+            I’m available for work. Contact me here:{" "}
+            <a
+              href="mailto:work@coppywriting.com"
+              className="text-blue-600 underline visited:text-blue-700 hover:text-blue-500"
+            >
+              work@coppywriting.com
+            </a>
+          </p>
         </div>
       </section>
 
@@ -139,45 +184,84 @@ export default function Page() {
       <section className="flex flex-col gap-12 px-8 py-12 md:flex-row md:flex-wrap md:justify-center md:gap-16 lg:gap-14">
         {/* child-1 */}
         <div className="flex flex-col items-center gap-2 text-center md:w-[45%] lg:w-[30%]">
-          <div className="aspect-square w-24 rounded-full bg-zinc-700"></div>
-          <h3 className="text-2xl font-semibold">Work with me</h3>
+          <div className="relative mb-4">
+            <div className="absolute left-[70%] top-0 h-[0.16rem] w-6 -translate-x-1/2 bg-black"></div>
+            <p className="pt-1.5 text-2xl font-bold italic">1</p>
+          </div>
+          <h3 className="text-2xl font-bold">Work with me</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad
-            perferendis libero odit totam obcaecati!
+            Tired of spending on copywriters who knows nothing about your
+            business context?
           </p>
-          <p className="mt-2">
-            <span className="border-b-2 border-b-gray-500 font-semibold italic">
-              Read More
+          <p>
+            Don’t even understand the{" "}
+            <span className="font-semibold underline">
+              fundamental of copywriting?
             </span>
           </p>
+          <p className="text-lg font-semibold">I’m available for work. </p>
+          <a
+            href="mailto:work@coppywriting.com"
+            className="mt-2 border-b-2 border-b-gray-500 font-semibold italic hover:opacity-95"
+          >
+            Contact
+          </a>
         </div>
         {/* child-2 */}
         <div className="flex flex-col items-center gap-2 text-center md:w-[45%] lg:w-[30%]">
-          <div className="aspect-square w-24 rounded-full bg-zinc-700"></div>
-          <h3 className="text-2xl font-semibold">Join my email list</h3>
+          <div className="relative mb-4">
+            <div className="absolute left-[70%] top-0 h-[0.16rem] w-6 -translate-x-1/2 bg-black"></div>
+            <p className="pt-1.5 text-2xl font-bold italic">2</p>
+          </div>
+          <h3 className="text-2xl font-bold">Join my email list</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad
-            perferendis libero odit totam obcaecati!
+            My email is not for everyone. And it’s neither free
+            entertainment/infotainment. It’s email marketing. Meaning? I email
+            and sell <span className="font-semibold underline">A LOT!</span>
           </p>
-          <p className="mt-2">
-            <span className="border-b-2 border-b-gray-500 font-semibold italic">
-              Read More
-            </span>
+          <p>
+            If you’ll just report me as spam on day 2 instead of UNSUBSCRIBE to
+            me... you better don’t click the button.
           </p>
+          <p>
+            If you cool about it and{" "}
+            <span className="font-semibold underline">GUARANTEED</span> to have
+            a daily laugh in copywriting business? Then:
+          </p>
+          <a
+            href="#footer"
+            className="mt-2 border-b-2 border-b-gray-500 font-semibold italic hover:opacity-95"
+          >
+            Sign up NOW!
+          </a>
         </div>
         {/* child-3 */}
         <div className="flex flex-col items-center gap-2 text-center md:w-[45%] lg:w-[30%]">
-          <div className="aspect-square w-24 rounded-full bg-zinc-700"></div>
-          <h3 className="text-2xl font-semibold">Coppywriting</h3>
+          <div className="relative mb-4">
+            <div className="absolute left-[70%] top-0 h-[0.16rem] w-6 -translate-x-1/2 bg-black"></div>
+            <p className="pt-1.5 text-2xl font-bold italic">3</p>
+          </div>
+          <h3 className="text-2xl font-bold">Coppywriting</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad
-            perferendis libero odit totam obcaecati!
-          </p>
-          <p className="mt-2">
-            <span className="border-b-2 border-b-gray-500 font-semibold italic">
-              Read More
+            You’ll{" "}
+            <span className="font-semibold underline">
+              learn everything I know about copywriting (the right way).
+            </span>
+            <span className="font-semibold underline">
+              learn everything I know about copywriting (the right way).
+            </span>{" "}
+            I spent THOUSANDS of dollars and hours of sleepless nights for this.
+            And{" "}
+            <span className="font-semibold underline">
+              you’ll get it for FREE.
             </span>
           </p>
+          <a
+            href=""
+            className="mt-2 cursor-default border-b-2 border-b-gray-500 font-semibold italic"
+          >
+            Coming Soon!
+          </a>
         </div>
       </section>
 
@@ -211,12 +295,14 @@ export default function Page() {
                 fill="currentFill"
               />
             </svg>
-            <h2 className="text-2xl font-bold md:text-2xl lg:text-5xl lg:leading-tight xl:text-6xl">
+            <h2 className="text-4xl font-bold lg:text-5xl lg:leading-tight xl:text-6xl">
               Action Speaks Louder <br className="hidden xl:block" /> Than
               Words!
             </h2>
-            <p className="max-w-md text-sm text-zinc-600 md:text-lg lg:max-w-xl lg:text-xl xl:text-2xl">
-              Dear Homie… <br />
+            <p className="max-w-md text-zinc-600 md:text-lg lg:max-w-xl lg:text-xl xl:text-2xl">
+              Dear Homie…
+            </p>
+            <p className="max-w-md text-zinc-600 md:text-lg lg:max-w-xl lg:text-xl xl:text-2xl">
               Come back soon as Mr. White and I (now with a little help from
               Pinkman) cook the ins and outs of copywriting Ice Copy just for
               you.

@@ -3,7 +3,7 @@ import MobileFooterForm from "./MobileFooterForm";
 
 const Footer = () => {
   return (
-    <footer className="mt-auto">
+    <footer id="footer" className="mt-auto">
       <FooterForm />
 
       {/* contact */}

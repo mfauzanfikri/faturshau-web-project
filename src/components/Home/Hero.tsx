@@ -188,7 +188,7 @@ const Hero = () => {
             disabled={(isLoading || isEmpty) && true}
             onClick={handleSubscribe}
             className="md:text-md bg-light text-dark rounded py-1.5
-            font-bold hover:opacity-95 disabled:bg-zinc-200 disabled:text-zinc-900 lg:mt-0 lg:px-8 xl:text-lg"
+            font-bold hover:opacity-95 disabled:bg-zinc-200 disabled:text-zinc-900 disabled:hover:opacity-100 lg:mt-0 lg:px-8 xl:text-lg"
           >
             Subscribe
           </button>
