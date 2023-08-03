@@ -100,10 +100,11 @@ const FooterForm = () => {
         <div className="flex w-4/5 max-w-2xl flex-col gap-2 rounded border border-slate-300 bg-gray-50 px-8 py-20 text-center shadow-md shadow-slate-600">
           <div className="flex flex-col gap-2 text-center">
             <h3 className="text-2xl font-bold">
-              Delivering one “Haha-Moment” in copywriting business every day.
+              Delivering one “Haha Moment” in the copywriting business every
+              day.
             </h3>
             <p>
-              Join the 1% stylish copywriters getting one laugh while learning
+              Join the 1% stylish copywriters getting a laugh while learning
               today’s copywriting lessons.
             </p>
           </div>
@@ -118,7 +119,7 @@ const FooterForm = () => {
                 onChange={handleInput}
               />
               <button
-                className="text-light bg-dark w-auto min-w-min rounded-md px-2.5 py-1.5 text-base hover:bg-opacity-80 disabled:bg-zinc-900 disabled:text-zinc-300"
+                className="text-light bg-dark w-auto min-w-min rounded-sm px-2.5 py-1.5 text-base hover:bg-opacity-80 disabled:bg-zinc-900 disabled:text-zinc-300"
                 disabled={(isLoading || isEmpty) && true}
                 onClick={handleSubscribe}
               >
@@ -133,9 +134,9 @@ const FooterForm = () => {
               }`}
             >
               <span className="invisible">a</span>
-              {isError && "There’s something wrong. Try again later."}
+              {isError && "Don’t use your “swipe-files” emails!"}
               <br className={`${isError && !isValid ? "" : "hidden"}`} />
-              {!isValid && "Email is not valid. Try again later."}
+              {!isValid && "Email is not valid. Try using your main email."}
               {isDone &&
                 "Success! Now check your email to confirm your subscription."}
             </p>

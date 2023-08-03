@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Home/Hero";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Faturshau - Home",
+  description:
+    "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
+};
 
 export default function Page() {
   return (
@@ -128,7 +135,10 @@ export default function Page() {
           </p>
 
           <p className="mt-4 lg:text-lg">
-            I’m Indonesia’s funniest copywriter in 3 years! <br />
+            I’m Indonesia’s funniest copywriter in 3 years!
+          </p>
+
+          <p className="mt-4 lg:text-lg">
             OR{" "}
             <span className="font-semibold underline">
               you’ll never know about me.
@@ -185,7 +195,7 @@ export default function Page() {
         {/* child-1 */}
         <div className="flex flex-col items-center gap-2 text-center md:w-[45%] lg:w-[30%]">
           <div className="relative mb-4">
-            <div className="absolute left-[70%] top-0 h-[0.16rem] w-6 -translate-x-1/2 bg-black"></div>
+            <div className="absolute left-[70%] top-0 h-[0.16rem] w-6 -translate-x-1/2 bg-zinc-600"></div>
             <p className="pt-1.5 text-2xl font-bold italic">1</p>
           </div>
           <h3 className="text-2xl font-bold">Work with me</h3>
@@ -200,17 +210,16 @@ export default function Page() {
             </span>
           </p>
           <p className="text-lg font-semibold">I’m available for work. </p>
-          <a
-            href="mailto:work@coppywriting.com"
-            className="mt-2 border-b-2 border-b-gray-500 font-semibold italic hover:opacity-95"
-          >
-            Contact
+          <a href="mailto:work@coppywriting.com" className="mt-2">
+            <button className="text-light rounded bg-black px-2.5 py-1.5 font-semibold italic hover:opacity-95">
+              Contact
+            </button>
           </a>
         </div>
         {/* child-2 */}
         <div className="flex flex-col items-center gap-2 text-center md:w-[45%] lg:w-[30%]">
           <div className="relative mb-4">
-            <div className="absolute left-[70%] top-0 h-[0.16rem] w-6 -translate-x-1/2 bg-black"></div>
+            <div className="absolute left-[70%] top-0 h-[0.16rem] w-6 -translate-x-1/2 bg-zinc-600"></div>
             <p className="pt-1.5 text-2xl font-bold italic">2</p>
           </div>
           <h3 className="text-2xl font-bold">Join my email list</h3>
@@ -228,17 +237,16 @@ export default function Page() {
             <span className="font-semibold underline">GUARANTEED</span> to have
             a daily laugh in copywriting business? Then:
           </p>
-          <a
-            href="#footer"
-            className="mt-2 border-b-2 border-b-gray-500 font-semibold italic hover:opacity-95"
-          >
-            Sign up NOW!
+          <a href="#footer" className="mt-2">
+            <button className="text-light rounded bg-black  px-2.5 py-1.5 font-semibold italic hover:opacity-95">
+              Sign up NOW!
+            </button>
           </a>
         </div>
         {/* child-3 */}
         <div className="flex flex-col items-center gap-2 text-center md:w-[45%] lg:w-[30%]">
           <div className="relative mb-4">
-            <div className="absolute left-[70%] top-0 h-[0.16rem] w-6 -translate-x-1/2 bg-black"></div>
+            <div className="absolute left-[70%] top-0 h-[0.16rem] w-6 -translate-x-1/2 bg-zinc-600"></div>
             <p className="pt-1.5 text-2xl font-bold italic">3</p>
           </div>
           <h3 className="text-2xl font-bold">Coppywriting</h3>
@@ -253,11 +261,13 @@ export default function Page() {
               you’ll get it for FREE.
             </span>
           </p>
-          <a
-            href=""
-            className="mt-2 cursor-default border-b-2 border-b-gray-500 font-semibold italic"
-          >
-            Coming Soon!
+          <a href="" className="hover:cursor-default">
+            <button
+              disabled={true}
+              className="text-light mt-2 rounded bg-zinc-900 px-2.5 py-1.5 font-semibold italic"
+            >
+              Coming Soon!
+            </button>
           </a>
         </div>
       </section>

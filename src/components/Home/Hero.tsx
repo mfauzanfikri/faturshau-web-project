@@ -135,9 +135,9 @@ const Hero = () => {
               }`}
             >
               <span className="invisible">a</span>
-              {isError && "There’s something wrong. Try again later."}
+              {isError && "Don’t use your “swipe-files” emails!"}
               <br className={`${isError && !isValid ? "" : "hidden"}`} />
-              {!isValid && "Email is not valid. Try again later."}
+              {!isValid && "Email is not valid. Try using your main email."}
               {isDone &&
                 "Success! Now check your email to confirm your subscription."}
             </p>

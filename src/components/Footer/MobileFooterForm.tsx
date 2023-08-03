@@ -98,10 +98,10 @@ const MobileFooterForm = () => {
       <div className="mb-8 flex flex-col gap-1.5 px-6 py-2 md:px-16 lg:hidden">
         <div className="flex flex-col items-center py-2 text-center">
           <h3 className="mb-1.5 text-2xl font-bold md:max-w-md">
-            Delivering one “Haha-Moment” in copywriting business every day.
+            Delivering one “Haha Moment” in the copywriting business every day.
           </h3>
           <p className="mb-1 md:max-w-sm">
-            Join the 1% stylish copywriters getting one laugh while learning
+            Join the 1% stylish copywriters getting a laugh while learning
             today’s copywriting lessons.
           </p>
         </div>
@@ -124,16 +124,16 @@ const MobileFooterForm = () => {
               }`}
             >
               <span className="invisible">a</span>
-              {isError && "There’s something wrong. Try again later."}
+              {isError && "Don’t use your “swipe-files” emails!"}
               <br className={`${isError && !isValid ? "" : "hidden"}`} />
-              {!isValid && "Email is not valid. Try again later."}
+              {!isValid && "Email is not valid. Try using your main email."}
               {isDone &&
                 "Success! Now check your email to confirm your subscription."}
             </p>
           </div>
           <div className="md:w-3/5">
             <button
-              className="text-light bg-dark w-full rounded py-1.5 disabled:bg-zinc-900 disabled:text-zinc-300"
+              className="text-light bg-dark w-full rounded-sm py-1.5 disabled:bg-zinc-900 disabled:text-zinc-300"
               disabled={(isLoading || isEmpty) && true}
               onClick={handleSubscribe}
             >
