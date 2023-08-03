@@ -25,7 +25,7 @@ const FooterForm = () => {
 
     setIsLoading(true);
 
-    fetch(`https://api.convertkit.com/v3/forms/5429216/subscribe`, {
+    fetch(`https://api.convertkit.com/v3/forms/5446548/subscribe`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json; charset=utf-8",
