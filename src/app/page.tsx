@@ -3,7 +3,7 @@ import Hero from "@/components/Home/Hero";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Faturshau - Home",
+  title: "Fatur Shau - Home",
   description:
     "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
 };
