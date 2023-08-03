@@ -97,10 +97,10 @@ const MobileFooterForm = () => {
       {/* mobile subsribe form */}
       <div className="mb-8 flex flex-col gap-1.5 px-6 py-2 md:px-16 lg:hidden">
         <div className="flex flex-col items-center py-2 text-center">
-          <h3 className="mb-1.5 text-2xl font-bold md:max-w-md">
+          <h3 className="mb-5 text-2xl font-bold md:max-w-md">
             Delivering one “Haha Moment” in the copywriting business every day.
           </h3>
-          <p className="mb-1 md:max-w-sm">
+          <p className="mb-3 md:max-w-sm">
             Join the 1% stylish copywriters getting a laugh while learning
             today’s copywriting lessons.
           </p>

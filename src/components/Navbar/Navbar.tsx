@@ -100,7 +100,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/coppywriting"
+                  href="https://coppywriting.com/"
                   className="text-light hover:text-zinc-200"
                 >
                   Coppywriting

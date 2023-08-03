@@ -103,16 +103,16 @@ const FooterForm = () => {
               Delivering one “Haha Moment” in the copywriting business every
               day.
             </h3>
-            <p>
+            <p className="mt-5">
               Join the 1% stylish copywriters getting a laugh while learning
               today’s copywriting lessons.
             </p>
           </div>
           {/* subscribe input */}
-          <div className="m-auto flex flex-col">
-            <div className="mt-2 flex gap-1.5">
+          <div className="mt-3 flex flex-col items-center">
+            <div className="mt-2 flex w-full justify-center gap-1.5">
               <input
-                className="w-3/4 min-w-[5rem] max-w-[18rem] rounded-md border border-slate-400 px-2 py-1 text-base"
+                className="w-3/4 rounded-sm border border-slate-400 px-2 py-1 text-base"
                 type="email"
                 placeholder="Email"
                 ref={inputRef}
