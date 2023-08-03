@@ -38,7 +38,7 @@ const Navbar = () => {
       <nav ref={navRef} className="relative bg-zinc-950 shadow-lg">
         <div className="text-light mx-auto flex items-center justify-between px-5 py-5 md:px-10 xl:px-16 2xl:px-28">
           {/* Logo */}
-          <Link href="/" as={"image"}>
+          <Link href="/">
             <svg
               className="h-auto w-32 md:w-36 lg:w-40 xl:w-48"
               width="62"
@@ -100,11 +100,8 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href=""
-                  className="cursor-default"
-                  onClick={(e) => {
-                    e.preventDefault();
-                  }}
+                  href="/coppywriting"
+                  className="text-light hover:text-zinc-200"
                 >
                   Coppywriting
                 </Link>
