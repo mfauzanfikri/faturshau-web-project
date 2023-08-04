@@ -99,10 +99,10 @@ const Hero = () => {
       {/* caption */}
       <div className="z-10 flex flex-1 flex-col gap-4">
         <div>
-          <h1 className="text-3xl font-extrabold capitalize md:text-4xl lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight 2xl:text-7xl 2xl:leading-tight">
+          <h1 className="text-4xl font-extrabold capitalize lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight 2xl:text-7xl 2xl:leading-tight">
             killer copy <br /> comedic flair <br /> own your style
           </h1>
-          <p className="mb-2.5 mt-3 max-w-sm text-sm sm:max-w-none md:text-base lg:mb-5 lg:mt-4 xl:mt-8 xl:text-xl 2xl:text-2xl">
+          <p className="mb-2.5 mt-3 max-w-sm sm:max-w-none lg:mb-5 lg:mt-4 xl:mt-8 xl:text-xl 2xl:text-2xl">
             Join the <b>1% stylish copywriters</b>. IF my DAILY emails don’t{" "}
             <br className="hidden sm:block" />
             give you a single{" "}
