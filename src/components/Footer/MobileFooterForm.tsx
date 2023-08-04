@@ -98,8 +98,12 @@ const MobileFooterForm = () => {
       <div className="mb-8 flex flex-col gap-1.5 overflow-hidden px-6 py-2 md:px-16 lg:hidden">
         <div className="flex flex-col items-center py-2 text-center">
           <h3 className="mb-5 text-2xl font-bold md:max-w-md">
-            Delivering one <br className="md:hidden" /> “Haha Moment” in the
-            copywriting business every day.
+            Delivering one <br className="sm:hidden" />
+            “Haha Moment” in the
+            <br className="sm:hidden" />
+            copywriting business
+            <br className="sm:hidden" />
+            every day.
           </h3>
           <p className="mb-3 md:max-w-sm">
             Join the 1% stylish copywriters getting a laugh while learning
