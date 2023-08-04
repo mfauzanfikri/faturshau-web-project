@@ -119,7 +119,7 @@ const FooterForm = () => {
                 onChange={handleInput}
               />
               <button
-                className="text-light bg-dark w-auto min-w-min rounded-sm px-2.5 py-1.5 text-base hover:bg-opacity-80 disabled:bg-zinc-900 disabled:text-zinc-300"
+                className="text-light bg-dark w-auto min-w-min rounded-sm px-2.5 py-2 text-base hover:bg-opacity-80 disabled:bg-zinc-900 disabled:text-zinc-300"
                 disabled={(isLoading || isEmpty) && true}
                 onClick={handleSubscribe}
               >

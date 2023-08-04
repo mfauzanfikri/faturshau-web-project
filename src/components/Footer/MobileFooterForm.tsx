@@ -119,7 +119,7 @@ const MobileFooterForm = () => {
             <p
               className={`${
                 isError || !isValid || isDone ? "visible" : "invisible"
-              } mt-2 -translate-y-2 text-xs ${
+              } mt-1 -translate-y-1.5 text-xs ${
                 isError || !isValid ? "text-red-700" : "text-green-600"
               }`}
             >
@@ -133,7 +133,7 @@ const MobileFooterForm = () => {
           </div>
           <div className="md:w-3/5">
             <button
-              className="text-light bg-dark w-full rounded-sm py-1.5 disabled:bg-zinc-900 disabled:text-zinc-300"
+              className="text-light bg-dark w-full rounded-sm py-2 disabled:bg-zinc-900 disabled:text-zinc-300"
               disabled={(isLoading || isEmpty) && true}
               onClick={handleSubscribe}
             >

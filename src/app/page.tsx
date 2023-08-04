@@ -211,7 +211,7 @@ export default function Page() {
           </p>
           <p className="text-lg font-semibold">I’m available for work. </p>
           <a href="mailto:work@coppywriting.com" className="mt-2">
-            <button className="text-light rounded-sm bg-black px-5 py-1.5 font-semibold hover:opacity-95">
+            <button className="text-light rounded-sm bg-black px-5 py-2.5 font-semibold hover:opacity-95">
               Contact
             </button>
           </a>
@@ -238,7 +238,7 @@ export default function Page() {
             a daily laugh in the copywriting business? Then:
           </p>
           <a href="#footer" className="mt-2">
-            <button className="text-light rounded-sm bg-black  px-5 py-1.5 font-semibold hover:opacity-95">
+            <button className="text-light rounded-sm bg-black px-5 py-2.5 font-semibold hover:opacity-95">
               Sign up NOW!
             </button>
           </a>
@@ -264,7 +264,7 @@ export default function Page() {
           <a href="" className="hover:cursor-default">
             <button
               disabled={true}
-              className="text-light mt-2 rounded-sm bg-zinc-900 px-5 py-1.5 font-semibold"
+              className="text-light mt-2 rounded-sm bg-zinc-900 px-5 py-2.5 font-semibold"
             >
               Coming Soon!
             </button>

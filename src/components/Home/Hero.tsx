@@ -130,7 +130,7 @@ const Hero = () => {
             <p
               className={`${
                 isError || !isValid || isDone ? "visible" : "invisible"
-              } mt-2 -translate-y-2 text-xs lg:hidden ${
+              } mt-1.5 -translate-y-1.5 text-xs lg:hidden ${
                 isError || !isValid ? "text-red-700" : "text-green-600"
               }`}
             >
