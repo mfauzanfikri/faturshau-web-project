@@ -253,9 +253,9 @@ export default function Page() {
           <p>
             You’ll learn{" "}
             <span className="font-semibold underline">
-              everything I know about copywriting.
+              everything I know about copywriting
             </span>{" "}
-            (the right way) I spent THOUSANDS of dollars and hours of sleepless
+            (the right way). I spent THOUSANDS of dollars and hours of sleepless
             nights for this. And{" "}
             <span className="font-semibold underline">
               you’ll get it for FREE.
