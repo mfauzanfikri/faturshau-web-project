@@ -263,11 +263,8 @@ export default function Page() {
               you’ll get it for FREE.
             </span>
           </p>
-          <a href="" className="hover:cursor-default">
-            <button
-              disabled={true}
-              className="text-light mt-2 rounded-sm bg-zinc-900 px-5 py-2.5 font-semibold"
-            >
+          <a href="https://coppywriting.com/" className="mt-2">
+            <button className="text-light rounded-sm bg-black px-5 py-2.5 font-semibold hover:opacity-95">
               Coming Soon!
             </button>
           </a>
