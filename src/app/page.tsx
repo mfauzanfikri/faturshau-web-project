@@ -16,7 +16,7 @@ export default function Page() {
 
       {/* section-2 divider 1 */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="uppercase tracking-[0.3em]">freebies</p>
+        <p className="uppercase tracking-[0.3em]">HALL OF FAME</p>
         <h2 className="mb-1 text-4xl font-bold">Best of Blog</h2>
         <p>Best post on Copywriting • Comedy • Style</p>
       </section>
@@ -170,10 +170,10 @@ export default function Page() {
           <p className="mt-4 font-semibold lg:text-lg">
             I’m available for work. Contact me here:{" "}
             <a
-              href="mailto:work@coppywriting.com"
+              href="mailto:shau@coppywriting.com"
               className="text-blue-600 underline visited:text-blue-700 hover:text-blue-500"
             >
-              work@coppywriting.com
+              shau@coppywriting.com
             </a>
           </p>
         </div>
@@ -206,11 +206,11 @@ export default function Page() {
           <p>
             Don’t even understand the{" "}
             <span className="font-semibold underline">
-              fundamental of copywriting?
+              fundamentals of copywriting?
             </span>
           </p>
           <p className="text-lg font-semibold">I’m available for work. </p>
-          <a href="mailto:work@coppywriting.com" className="mt-2">
+          <a href="mailto:shau@coppywriting.com" className="mt-2">
             <button className="text-light rounded-sm bg-black px-5 py-2.5 font-semibold hover:opacity-95">
               Contact
             </button>
@@ -230,7 +230,9 @@ export default function Page() {
           </p>
           <p>
             If you’ll just report me as spam on day 2 instead of UNSUBSCRIBE to
-            me... you better don’t click the button.
+            me...{" "}
+            <span className="font-semibold uppercase underline">don’t</span>{" "}
+            click the button.
           </p>
           <p>
             If you cool about it and{" "}
@@ -276,7 +278,7 @@ export default function Page() {
       <section className="text-light bg-zinc-800 py-8 text-center">
         <p className="uppercase tracking-[0.3em]">writing</p>
         <h2 className="pb-1 text-4xl font-bold">Read The Archives</h2>
-        <p>Dives down on copywriting & comedy.</p>
+        <p>Dives down on Copywriting • Comedy • Style</p>
       </section>
 
       {/* section-9 cards  */}
