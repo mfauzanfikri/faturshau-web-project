@@ -24,7 +24,7 @@ export default function Page() {
       {/* section-3 services cards */}
       <section className="flex flex-col gap-8 px-5 pb-8 pt-3 text-slate-600 lg:pb-16 lg:pt-8">
         {/* coming soon */}
-        <div className="flex w-full flex-1 items-center justify-center text-center">
+        <div className="flex w-full flex-1 items-center justify-center px-3 text-center">
           <div className="text-dark flex h-96 flex-col items-center justify-center gap-2 xl:h-[30rem]">
             {/* loading */}
             <svg
@@ -211,7 +211,7 @@ export default function Page() {
           </p>
           <p className="text-lg font-semibold">I’m available for work. </p>
           <a href="mailto:work@coppywriting.com" className="mt-2">
-            <button className="text-light rounded-sm bg-black px-2.5 py-1.5 font-semibold hover:opacity-95">
+            <button className="text-light rounded-sm bg-black px-5 py-1.5 font-semibold hover:opacity-95">
               Contact
             </button>
           </a>
@@ -235,10 +235,10 @@ export default function Page() {
           <p>
             If you cool about it and{" "}
             <span className="font-semibold underline">GUARANTEED</span> to have
-            a daily laugh in copywriting business? Then:
+            a daily laugh in the copywriting business? Then:
           </p>
           <a href="#footer" className="mt-2">
-            <button className="text-light rounded-sm bg-black  px-2.5 py-1.5 font-semibold hover:opacity-95">
+            <button className="text-light rounded-sm bg-black  px-5 py-1.5 font-semibold hover:opacity-95">
               Sign up NOW!
             </button>
           </a>
@@ -251,12 +251,12 @@ export default function Page() {
           </div>
           <h3 className="text-2xl font-bold">Coppywriting</h3>
           <p>
-            You’ll{" "}
+            You’ll learn{" "}
             <span className="font-semibold underline">
-              learn everything I know about copywriting (the right way).
+              everything I know about copywriting.
             </span>{" "}
-            I spent THOUSANDS of dollars and hours of sleepless nights for this.
-            And{" "}
+            (the right way) I spent THOUSANDS of dollars and hours of sleepless
+            nights for this. And{" "}
             <span className="font-semibold underline">
               you’ll get it for FREE.
             </span>
@@ -264,7 +264,7 @@ export default function Page() {
           <a href="" className="hover:cursor-default">
             <button
               disabled={true}
-              className="text-light mt-2 rounded-sm bg-zinc-900 px-2.5 py-1.5 font-semibold italic"
+              className="text-light mt-2 rounded-sm bg-zinc-900 px-5 py-1.5 font-semibold"
             >
               Coming Soon!
             </button>
@@ -281,9 +281,9 @@ export default function Page() {
 
       {/* section-9 cards  */}
       {/* mb-10 flex flex-col items-center justify-center gap-8 bg-zinc-50 px-2.5 py-12 md:flex-row md:flex-wrap */}
-      <section className="mb-10 flex items-center justify-center gap-8 bg-white px-2.5 py-12">
+      <section className="mb-10 flex items-center justify-center gap-8 bg-white px-3 py-12">
         {/* coming soon */}
-        <div className="flex w-full flex-1 items-center justify-center text-center">
+        <div className="flex w-full flex-1 items-center justify-center px-5 text-center">
           <div className="text-dark flex h-96 flex-col items-center justify-center gap-2 xl:h-[30rem]">
             {/* loading */}
             <div>
