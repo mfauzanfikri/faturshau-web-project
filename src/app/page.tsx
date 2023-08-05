@@ -22,7 +22,7 @@ export default function Page() {
       </section>
 
       {/* section-3 services cards */}
-      <section className="flex flex-col gap-8 px-5 pb-8 pt-3 text-slate-600 lg:pb-16 lg:pt-8">
+      <section className="flex flex-col gap-9 px-5 pb-8 pt-3 text-slate-600 lg:pb-16 lg:pt-8">
         {/* coming soon */}
         <div className="flex w-full flex-1 items-center justify-center px-3 text-center">
           <div className="text-dark flex h-96 flex-col items-center justify-center gap-2 xl:h-[30rem]">

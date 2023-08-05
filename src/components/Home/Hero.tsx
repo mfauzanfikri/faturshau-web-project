@@ -95,14 +95,14 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 text-[#efefef] md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-32">
+    <section className="relative overflow-hidden bg-[#0E100F] px-5 py-14 text-[#efefef] md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-32">
       {/* caption */}
       <div className="z-10 flex flex-1 flex-col gap-4">
-        <div>
+        <div className="mb-2">
           <h1 className="text-[40px] font-black capitalize leading-[3rem] lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight 2xl:text-7xl 2xl:leading-tight">
             killer copy <br /> comedic flair <br /> own your style
           </h1>
-          <p className="mb-2.5 mt-3 max-w-sm text-lg sm:max-w-none lg:mb-5 lg:mt-4 xl:mt-8 xl:text-xl 2xl:text-2xl">
+          <p className="mb-4 mt-6 max-w-sm text-lg sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
             Join the <b>1% stylish copywriters</b>. IF my DAILY emails don’t{" "}
             <br className="hidden sm:block" />
             give you a single <br className="sm:hidden" />
@@ -117,7 +117,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="relative flex flex-col md:max-w-md lg:max-w-xl lg:flex-row lg:gap-4">
+        <div className="relative mt-2 flex flex-col md:max-w-md lg:max-w-xl lg:flex-row lg:gap-4">
           <div className="relative lg:w-3/5">
             <input
               className="w-full border-b border-b-zinc-400 bg-transparent p-3 text-sm focus:outline-none md:text-base xl:text-lg"
@@ -187,8 +187,7 @@ const Hero = () => {
           <button
             disabled={(isLoading || isEmpty || !isValid) && true}
             onClick={handleSubscribe}
-            className="md:text-md lg:bg-light lg:text-dark rounded-sm bg-zinc-500 py-1.5 font-bold hover:opacity-95
-            disabled:bg-zinc-800 disabled:text-zinc-400 disabled:hover:opacity-100 lg:mt-0 lg:px-8 lg:disabled:bg-zinc-200 lg:disabled:text-zinc-900 xl:text-lg"
+            className="lg:bg-light lg:text-dark rounded-sm bg-zinc-800 py-2 font-bold hover:opacity-95 focus:ring-black disabled:hover:opacity-100 lg:mt-0 lg:px-8 lg:disabled:bg-zinc-200 lg:disabled:text-zinc-900 xl:text-lg"
           >
             Subscribe
           </button>

@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 const cardo = Cardo({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "700"],
   variable: "--font-cardo",
   fallback: ["sans-serif"],
 });
