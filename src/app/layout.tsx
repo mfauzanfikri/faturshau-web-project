@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Cardo } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -8,6 +8,13 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-poppins",
+  fallback: ["sans-serif"],
+});
+
+const cardo = Cardo({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-cardo",
   fallback: ["sans-serif"],
 });
 
@@ -22,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={poppins.variable} lang="en">
+    <html className={`${poppins.variable} ${cardo.variable}`} lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>

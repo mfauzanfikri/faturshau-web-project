@@ -139,7 +139,7 @@ const MobileFooterForm = () => {
           <div className="md:w-3/5">
             <button
               className="text-light bg-dark w-full rounded-sm py-2 disabled:bg-zinc-900 disabled:text-zinc-300"
-              disabled={(isLoading || isEmpty) && true}
+              disabled={(isLoading || isEmpty || !isValid) && true}
               onClick={handleSubscribe}
             >
               Subscribe

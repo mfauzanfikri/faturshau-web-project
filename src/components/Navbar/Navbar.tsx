@@ -152,11 +152,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="#"
-              className="inline-block w-full cursor-default px-5 py-2"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              href="https://coppywriting.com/"
+              className="text-dark inline-block w-full cursor-default px-5 py-2"
             >
               Coppywriting
             </Link>

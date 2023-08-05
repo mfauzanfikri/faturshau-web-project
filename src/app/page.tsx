@@ -16,7 +16,7 @@ export default function Page() {
 
       {/* section-2 divider 1 */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="uppercase tracking-[0.3em]">HALL OF FAME</p>
+        <p className="font-cardo uppercase tracking-[0.3em]">HALL OF FAME</p>
         <h2 className="mb-1 text-4xl font-bold">Best of Blog</h2>
         <p>Best post on Copywriting • Comedy • Style</p>
       </section>
@@ -106,7 +106,7 @@ export default function Page() {
 
       {/* section-4 divider */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="uppercase tracking-[0.3em]">story</p>
+        <p className="font-cardo uppercase tracking-[0.3em]">story</p>
         <h2 className="pb-1 text-4xl font-bold">Who is Fatur Shau?</h2>
         <p>Direct-response copywriter and aspiring comedian.</p>
       </section>
@@ -125,7 +125,7 @@ export default function Page() {
           <div className="absolute right-[2%] top-1/2 hidden h-[95%] w-[0.1rem] -translate-y-1/2 bg-black lg:block"></div>
         </div>
         {/* contents */}
-        <div className="p-5 lg:w-[65%] lg:justify-start lg:self-stretch">
+        <div className="py-2 lg:w-[65%] lg:justify-start lg:self-stretch">
           <h2 className="text-2xl font-bold lg:text-3xl">
             Hey. I’m Shau. Fatur Shau.
           </h2>
@@ -181,7 +181,9 @@ export default function Page() {
 
       {/* section-6 divider */}
       <section className="text-light bg-zinc-800 px-1.5 py-8 text-center">
-        <p className="uppercase tracking-[0.3em]">3 ways i can help you</p>
+        <p className="font-cardo uppercase tracking-[0.3em]">
+          3 ways i can help you
+        </p>
         <h2 className="mt-2 pb-1 text-4xl font-bold">
           Hire me. <span className="hidden md:inline"> </span>
           <br className="md:hidden" />
@@ -273,7 +275,7 @@ export default function Page() {
 
       {/* section-8 divider */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="uppercase tracking-[0.3em]">writing</p>
+        <p className="font-cardo uppercase tracking-[0.3em]">writing</p>
         <h2 className="pb-1 text-4xl font-bold">Read The Archives</h2>
         <p>Dives down on Copywriting • Comedy • Style</p>
       </section>

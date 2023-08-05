@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
+        cardo: ["var(--font-cardo)"],
       },
       keyframes: {
         "slide-in": {

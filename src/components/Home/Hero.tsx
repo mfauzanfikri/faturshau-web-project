@@ -95,7 +95,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="text-light relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:min-h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-32">
+    <section className="relative overflow-hidden bg-[#0E100F] px-5 pb-12 pt-8 text-[#efefef] md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-32">
       {/* caption */}
       <div className="z-10 flex flex-1 flex-col gap-4">
         <div>
@@ -185,10 +185,10 @@ const Hero = () => {
           </div>
           {/* subscribe button */}
           <button
-            disabled={(isLoading || isEmpty) && true}
+            disabled={(isLoading || isEmpty || !isValid) && true}
             onClick={handleSubscribe}
-            className="md:text-md bg-light text-dark rounded-sm py-1.5
-            font-bold hover:opacity-95 disabled:bg-zinc-200 disabled:text-zinc-900 disabled:hover:opacity-100 lg:mt-0 lg:px-8 xl:text-lg"
+            className="md:text-md lg:bg-light lg:text-dark rounded-sm bg-zinc-500 py-1.5 font-bold hover:opacity-95
+            disabled:bg-zinc-800 disabled:text-zinc-400 disabled:hover:opacity-100 lg:mt-0 lg:px-8 lg:disabled:bg-zinc-200 lg:disabled:text-zinc-900 xl:text-lg"
           >
             Subscribe
           </button>
