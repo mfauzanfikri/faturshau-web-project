@@ -122,10 +122,10 @@ export default function Page() {
             alt="Fatur Shau"
             className="-z-10 mx-auto w-56 rounded-full lg:w-56 xl:w-72"
           />
-          <div className="absolute right-[2%] top-1/2 hidden h-[95%] w-[0.1rem] -translate-y-1/2 bg-black lg:block"></div>
+          <div className="absolute right-[7%] top-1/2 hidden h-[95%] w-[0.1rem] -translate-y-1/2 bg-black lg:block"></div>
         </div>
         {/* contents */}
-        <div className="py-2 lg:w-[65%] lg:justify-start lg:self-stretch">
+        <div className="mt-4 py-2 lg:mt-0 lg:w-[65%] lg:justify-start lg:self-stretch">
           <h2 className="text-2xl font-bold lg:text-3xl">
             Hey. I’m Shau. Fatur Shau.
           </h2>
