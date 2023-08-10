@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Fatur Shau - Home",
   description:
     "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
+  openGraph: {
+    images: "/images/fatur_shau_alt.png",
+  },
 };
 
 export default function Page() {
