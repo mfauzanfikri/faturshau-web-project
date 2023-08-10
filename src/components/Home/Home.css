@@ -15,3 +15,10 @@
     stroke-dashoffset: -1000;
   }
 }
+
+@media (max-width: 376px) {
+  .hero-br {
+    display: none;
+    visibility: hidden;
+  }
+}

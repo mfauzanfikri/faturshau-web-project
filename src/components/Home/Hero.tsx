@@ -105,7 +105,7 @@ const Hero = () => {
           <p className="mb-4 mt-6 max-w-sm text-lg sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
             Join the <b>1% stylish copywriters</b>. IF my DAILY emails don’t{" "}
             <br className="hidden sm:block" />
-            give you a single <br className="sm:hidden" />
+            give you a single <br className="hero-br sm:hidden" />
             <b className="font-extrabold">
               “<u>Haha Moment</u>“
             </b>{" "}
