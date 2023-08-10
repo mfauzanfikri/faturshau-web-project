@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins, Cardo } from "next/font/google";
+import { Poppins, Cardo, Tenor_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -18,6 +18,12 @@ const cardo = Cardo({
   fallback: ["sans-serif"],
 });
 
+const tenor = Tenor_Sans({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-tenor",
+});
+
 export const metadata: Metadata = {
   title: "Fatur Shau",
   description: "Faturshau Web",
@@ -29,7 +35,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={`${poppins.variable} ${cardo.variable}`} lang="en">
+    <html
+      className={`${poppins.variable} ${cardo.variable} ${tenor.variable}`}
+      lang="en"
+    >
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>

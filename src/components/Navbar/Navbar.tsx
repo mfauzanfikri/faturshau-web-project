@@ -6,13 +6,17 @@ import React, { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const [isShown, setIsShown] = useState(false);
-  const navRef = useRef(null);
+  const navRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    const node: any = navRef.current;
+    const node: HTMLElement | null = navRef.current;
 
     const handleClickOutside = (event: MouseEvent) => {
-      if (node && !node.contains(event.target)) {
+      if (
+        node &&
+        event?.target instanceof HTMLElement &&
+        !node.contains(event.target)
+      ) {
         if (isShown) {
           setIsShown(false);
         }
