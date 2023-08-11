@@ -25,7 +25,10 @@ const tenor = Tenor_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Fatur Shau",
+  title: {
+    template: "Fatur Shau - %s",
+    default: "Fatur Shau",
+  },
   description: "Faturshau Web",
 };
 
