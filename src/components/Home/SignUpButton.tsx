@@ -3,12 +3,7 @@
 const SignUpButton = () => {
   const scrollToFooterForm = () => {
     const footerForm = document.querySelector(".footer-form");
-    console.log(footerForm);
-
-    window.scrollTo({
-      top: (footerForm?.getBoundingClientRect().top || 0) + window.scrollY,
-      behavior: "smooth",
-    });
+    footerForm?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
