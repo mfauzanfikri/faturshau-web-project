@@ -16,12 +16,14 @@ export default function HomePage() {
       <Hero />
 
       {/* section-2 divider 1 */}
-      <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="font-tenor text-lg uppercase tracking-[0.3em]">
+      <section className="text-light bg-zinc-800 py-8 text-center xl:text-lg">
+        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
           HALL OF FAME
         </p>
-        <h2 className="mb-1 text-4xl font-bold">Best of Blog</h2>
-        <p className="text-lg">Best post on Copywriting • Comedy • Style</p>
+        <h2 className="mb-1 text-4xl font-bold xl:mb-4 xl:text-6xl">
+          Best of Blog
+        </h2>
+        <p className="xl:text-xl">Best post on Copywriting • Comedy • Style</p>
       </section>
 
       {/* section-3 services cards */}
@@ -109,11 +111,9 @@ export default function HomePage() {
 
       {/* section-4 divider */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="font-tenor text-lg uppercase tracking-[0.3em]">story</p>
+        <p className="font-tenor uppercase tracking-[0.3em]">story</p>
         <h2 className="pb-1 text-4xl font-bold">Who is Fatur Shau?</h2>
-        <p className="text-lg">
-          Direct-response copywriter and aspiring comedian.
-        </p>
+        <p className="">Direct-response copywriter and comedian.</p>
       </section>
 
       {/* section-5 author */}
