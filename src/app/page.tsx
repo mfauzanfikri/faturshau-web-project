@@ -17,9 +17,11 @@ export default function HomePage() {
 
       {/* section-2 divider 1 */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="font-tenor uppercase tracking-[0.3em]">HALL OF FAME</p>
+        <p className="font-tenor text-lg uppercase tracking-[0.3em]">
+          HALL OF FAME
+        </p>
         <h2 className="mb-1 text-4xl font-bold">Best of Blog</h2>
-        <p>Best post on Copywriting • Comedy • Style</p>
+        <p className="text-lg">Best post on Copywriting • Comedy • Style</p>
       </section>
 
       {/* section-3 services cards */}
@@ -107,9 +109,11 @@ export default function HomePage() {
 
       {/* section-4 divider */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="font-tenor uppercase tracking-[0.3em]">story</p>
+        <p className="font-tenor text-lg uppercase tracking-[0.3em]">story</p>
         <h2 className="pb-1 text-4xl font-bold">Who is Fatur Shau?</h2>
-        <p>Direct-response copywriter and aspiring comedian.</p>
+        <p className="text-lg">
+          Direct-response copywriter and aspiring comedian.
+        </p>
       </section>
 
       {/* section-5 author */}
@@ -182,7 +186,7 @@ export default function HomePage() {
 
       {/* section-6 divider */}
       <section className="text-light bg-zinc-800 px-1.5 py-8 text-center">
-        <p className="font-tenor uppercase tracking-[0.3em]">
+        <p className="font-tenor text-lg uppercase tracking-[0.3em]">
           3 ways i can help you
         </p>
         <h2 className="mt-2 pb-1 text-4xl font-bold">
