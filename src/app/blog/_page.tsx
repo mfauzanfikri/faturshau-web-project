@@ -1,35 +1,5 @@
 import BlogPost from "@/components/Blog/BlogPost";
 
-/**
- * A temp function to print blog post cards
- * @param i Number of blog post to be printed
- * @returns Blog post cards
- */
-const printBlogPost = (i: number) => {
-  let arr: React.JSX.Element[] = [];
-  for (let index = 0; index < i; index++) {
-    arr.push(
-      <a href="" className="hover:bg-zinc-100 focus:bg-zinc-100">
-        <article className="border-b border-zinc-400 py-5 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
-          <div className="mb-2 px-8 ">
-            <p className="mb-1 text-xs text-zinc-500">Category</p>
-            <h4 className="mb-2.5 text-xl font-bold text-zinc-600">
-              Test {i + 1}
-            </h4>
-            <p className="text-sm text-zinc-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem eius praesentium ullam atque ducimus dolores quas
-              tenetur maiores itaque. Quos.
-            </p>
-          </div>
-        </article>
-      </a>,
-    );
-  }
-
-  return arr;
-};
-
 const page = () => {
   return (
     <>

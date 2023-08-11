@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Home/Hero";
+import SignUpButton from "@/components/Home/SignUpButton";
 import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Fatur Shau - Home",
   description:
     "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
-  openGraph: {
-    images: "/images/fatur_shau_alt.png",
-  },
 };
 
-export default function Page() {
+export default function HomePage() {
   return (
     <>
       {/* section-1 hero */}
@@ -244,11 +242,7 @@ export default function Page() {
             <span className="font-semibold underline">GUARANTEED</span> to have
             a daily laugh in the copywriting business? Then:
           </p>
-          <a href="#footer" className="mt-2">
-            <button className="text-light rounded-sm bg-black px-5 py-2.5 font-semibold hover:opacity-95">
-              Sign up NOW!
-            </button>
-          </a>
+          <SignUpButton />
         </div>
         {/* child-3 */}
         <div className="flex flex-col items-center gap-2 text-center md:w-[45%] lg:w-[30%]">

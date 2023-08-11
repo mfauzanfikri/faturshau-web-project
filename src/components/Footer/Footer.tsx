@@ -7,7 +7,7 @@ const Footer = () => {
       <FooterForm />
 
       {/* contact */}
-      <div className="my-2 flex justify-center">
+      <div className="footer-form my-2 flex justify-center">
         <a
           href="https://twitter.com/thestorystylist"
           target="_blank"
