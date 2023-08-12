@@ -99,9 +99,10 @@ const MobileFooterForm = () => {
         <div className="flex flex-col items-center py-2 text-center">
           <h3 className="mb-5 text-2xl font-bold md:max-w-md">
             Delivering one <br className="sm:hidden" />
-            “Haha Moment” in the
+            “Haha Moment” in the <span className="hidden sm:inline"> </span>
             <br className="sm:hidden" />
-            copywriting business
+            <span className="hidden sm:inline"> </span>
+            copywriting business <span className="hidden sm:inline"> </span>
             <br className="sm:hidden" />
             every day.
           </h3>
