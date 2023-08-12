@@ -20,9 +20,7 @@ export default function HomePage() {
         <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
           HALL OF FAME
         </p>
-        <h2 className="mb-1 text-4xl font-bold xl:mb-4 xl:text-6xl">
-          Best of Blog
-        </h2>
+        <h2 className="mb-1 text-4xl font-bold xl:mb-4">Best of Blog</h2>
         <p className="xl:text-xl">Best post on Copywriting • Comedy • Style</p>
       </section>
 
@@ -111,9 +109,11 @@ export default function HomePage() {
 
       {/* section-4 divider */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="font-tenor uppercase tracking-[0.3em]">story</p>
+        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
+          story
+        </p>
         <h2 className="pb-1 text-4xl font-bold">Who is Fatur Shau?</h2>
-        <p className="">Direct-response copywriter and comedian.</p>
+        <p className="xl:text-lg">Direct-response copywriter and comedian.</p>
       </section>
 
       {/* section-5 author */}
@@ -186,7 +186,7 @@ export default function HomePage() {
 
       {/* section-6 divider */}
       <section className="text-light bg-zinc-800 px-1.5 py-8 text-center">
-        <p className="font-tenor text-lg uppercase tracking-[0.3em]">
+        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
           3 ways i can help you
         </p>
         <h2 className="mt-2 pb-1 text-4xl font-bold">
@@ -276,9 +276,11 @@ export default function HomePage() {
 
       {/* section-8 divider */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="font-tenor uppercase tracking-[0.3em]">writing</p>
+        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
+          writing
+        </p>
         <h2 className="pb-1 text-4xl font-bold">Read The Archives</h2>
-        <p>Dives down on Copywriting • Comedy • Style</p>
+        <p className="xl:text-lg">Dives down on Copywriting • Comedy • Style</p>
       </section>
 
       {/* section-9 cards  */}
