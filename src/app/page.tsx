@@ -16,12 +16,12 @@ export default function HomePage() {
       <Hero />
 
       {/* section-2 divider 1 */}
-      <section className="text-light bg-zinc-800 py-8 text-center xl:text-lg">
-        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
+      <section className="text-light bg-zinc-800 py-8 text-center">
+        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-xl">
           HALL OF FAME
         </p>
-        <h2 className="mb-1 text-4xl font-bold xl:mb-4">Best of Blog</h2>
-        <p className="xl:text-xl">Best post on Copywriting • Comedy • Style</p>
+        <h2 className="mb-1 text-4xl font-bold xl:mb-2">Best of Blog</h2>
+        <p className="xl:text-lg">Best post on Copywriting • Comedy • Style</p>
       </section>
 
       {/* section-3 services cards */}
@@ -109,10 +109,10 @@ export default function HomePage() {
 
       {/* section-4 divider */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
+        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-xl">
           story
         </p>
-        <h2 className="pb-1 text-4xl font-bold">Who is Fatur Shau?</h2>
+        <h2 className="pb-1 text-4xl font-bold xl:mb-2">Who is Fatur Shau?</h2>
         <p className="xl:text-lg">Direct-response copywriter and comedian.</p>
       </section>
 
@@ -186,7 +186,7 @@ export default function HomePage() {
 
       {/* section-6 divider */}
       <section className="text-light bg-zinc-800 px-1.5 py-8 text-center">
-        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
+        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-xl">
           3 ways i can help you
         </p>
         <h2 className="mt-2 pb-1 text-4xl font-bold">
@@ -276,10 +276,10 @@ export default function HomePage() {
 
       {/* section-8 divider */}
       <section className="text-light bg-zinc-800 py-8 text-center">
-        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
+        <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-xl">
           writing
         </p>
-        <h2 className="pb-1 text-4xl font-bold">Read The Archives</h2>
+        <h2 className="pb-1 text-4xl font-bold xl:mb-2">Read The Archives</h2>
         <p className="xl:text-lg">Dives down on Copywriting • Comedy • Style</p>
       </section>
 
