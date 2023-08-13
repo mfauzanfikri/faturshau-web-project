@@ -4,9 +4,28 @@ import SignUpButton from "@/components/Home/SignUpButton";
 import Image from "next/image";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://faturshau.com"),
   title: "Fatur Shau - Home",
   description:
-    "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
+    "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
+  openGraph: {
+    title: "",
+    description: "",
+    url: "https://faturshau.com",
+    siteName: "",
+    // images: "",
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "",
+    description: "",
+    siteId: "",
+    creator: "",
+    creatorId: "",
+    // images: "",
+  },
 };
 
 export default function HomePage() {
@@ -112,7 +131,7 @@ export default function HomePage() {
         <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
           story
         </p>
-        <h2 className="pb-1 text-4xl font-bold xl:mb-2">Who is Fatur Shau?</h2>
+        <h2 className="mb-1 text-4xl font-bold xl:mb-2">Who is Fatur Shau?</h2>
         <p className="xl:text-lg">Direct-response copywriter and comedian.</p>
       </section>
 
@@ -189,7 +208,7 @@ export default function HomePage() {
         <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
           3 ways i can help you
         </p>
-        <h2 className="mt-2 pb-1 text-4xl font-bold">
+        <h2 className="text-4xl font-bold">
           Hire me. <span className="hidden md:inline"> </span>
           <br className="md:hidden" />
           Join my list. <span className="hidden md:inline"> </span>
@@ -279,7 +298,7 @@ export default function HomePage() {
         <p className="font-tenor uppercase tracking-[0.3em] xl:mb-1 xl:text-lg">
           writing
         </p>
-        <h2 className="pb-1 text-4xl font-bold xl:mb-2">Read The Archives</h2>
+        <h2 className="mb-1 text-4xl font-bold xl:mb-2">Read The Archives</h2>
         <p className="xl:text-lg">Dives down on Copywriting • Comedy • Style</p>
       </section>
 
