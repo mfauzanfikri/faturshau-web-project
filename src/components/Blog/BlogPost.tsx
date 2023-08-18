@@ -25,7 +25,7 @@ const BlogPost = () => {
   };
 
   return (
-    <>
+    <div className="flex flex-col items-center">
       <Posts posts={currentPosts} />
       <Pagination
         postsPerPage={postsPerPage}
@@ -33,7 +33,7 @@ const BlogPost = () => {
         paginate={paginate}
         currentPage={currentPage}
       />
-    </>
+    </div>
   );
 };
 

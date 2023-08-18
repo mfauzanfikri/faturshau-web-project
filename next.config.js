@@ -6,10 +6,10 @@ const nextConfig = {
   //   unoptimized: true,
   // },
   // distDir: "dist",
-  experimental: {
-    workerThreads: false,
-    cpus: 4,
-  },
+  // experimental: {
+  //   workerThreads: false,
+  //   cpus: 4,
+  // },
 };
 
 module.exports = nextConfig;
