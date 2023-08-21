@@ -42,7 +42,6 @@ const BlogPost = () => {
         totalPosts={totalPosts}
         paginate={paginate}
         currentPage={currentPage}
-        blogPostRef={blogPostRef}
       />
     </div>
   );

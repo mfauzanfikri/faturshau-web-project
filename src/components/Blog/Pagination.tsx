@@ -1,17 +1,13 @@
-import { RefObject } from "react";
-
 const Pagination = ({
   postsPerPage,
   totalPosts,
   paginate,
   currentPage,
-  blogPostRef,
 }: {
   postsPerPage: number;
   totalPosts: number;
   paginate: Function;
   currentPage: number;
-  blogPostRef: RefObject<HTMLDivElement>;
 }) => {
   const pageNumbers = [];
   const totalPage = Math.ceil(totalPosts / postsPerPage);
@@ -22,21 +18,23 @@ const Pagination = ({
 
   return (
     <nav className="mt-6">
-      <ul className="flex gap-2">
-        <li>
+      <ul className="flex text-center">
+        <li className="flex h-10 items-center rounded-s border border-zinc-500 px-2 py-1">
           <button disabled={currentPage === 1}>prev</button>
         </li>
         {pageNumbers.map((number) => {
           return (
             <li
               key={number}
-              className={`${currentPage === number && "text-red-600"}`}
+              className={`${
+                currentPage === number && "text-red-600"
+              } flex h-10 w-10 items-center justify-center border border-zinc-500 p-1`}
             >
               <button onClick={() => paginate(number)}>{number}</button>
             </li>
           );
         })}
-        <li>
+        <li className="flex h-10 items-center justify-center rounded-e border border-zinc-500 px-2 py-1">
           <button disabled={currentPage === totalPage}>next</button>
         </li>
       </ul>
