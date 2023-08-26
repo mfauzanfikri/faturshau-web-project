@@ -63,7 +63,9 @@ const Hero = () => {
         setTimeout(() => {
           setIsDone(false);
         }, 3000);
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 3000);
 
         if (heroInputRef.current) {
           heroInputRef.current.value = "";
@@ -95,7 +97,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#0E100F] px-5 py-14 text-[#efefef] md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-32">
+    <section className="relative overflow-hidden bg-[#0E100F] px-5 py-14 text-[#efefef] md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-24">
       {/* caption */}
       <div className="z-10 flex flex-1 flex-col gap-4">
         <div className="mb-2">
