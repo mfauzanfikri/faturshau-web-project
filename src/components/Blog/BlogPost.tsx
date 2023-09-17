@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Pagination from "./Pagination";
 import Posts from "./Posts";
 
@@ -14,24 +14,46 @@ const BlogPost = () => {
   const [blogPosts, setBlogPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const blogPostRef = useRef<HTMLDivElement>(null);
-  const postsPerPage = 4;
-  const totalPosts = posts.length;
+  const postsPerPage = 10;
+  const totalPosts = blogPosts.length;
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const fetchBlogs = async () => {
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_API_BASE_URL +
+        "/blogs?api_key=" +
+        process.env.NEXT_PUBLIC_API_KEY,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      },
+    );
+
+    const resData = await res.json();
+    console.log(resData);
+    setBlogPosts(resData.data);
+  };
+
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
 
   const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber);
-    if (blogPostRef && blogPostRef.current) {
-      window.scrollTo({
-        behavior: "smooth",
-        top:
-          blogPostRef.current.getBoundingClientRect().top -
-          document.body.getBoundingClientRect().top -
-          150,
-      });
-    }
+    // if (blogPostRef && blogPostRef.current) {
+    //   window.scrollTo({
+    //     behavior: "smooth",
+    //     top:
+    //       blogPostRef.current.getBoundingClientRect().top -
+    //       document.body.getBoundingClientRect().top -
+    //       150,
+    //   });
+    // }
   };
 
   return (
