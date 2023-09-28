@@ -21,7 +21,7 @@ const BlogPost = ({ blogId }: { blogId: string }) => {
   const router = useRouter();
 
   const [post, setPost] = useState<Blog | null>(null);
-  //   const [date, setDate] = useState<string|Date|null>(null)
+  const [date, setDate] = useState<string | Date | null>(null);
 
   const fetchBlog = async () => {
     const res = await fetch(
@@ -41,9 +41,10 @@ const BlogPost = ({ blogId }: { blogId: string }) => {
     const resData = await res.json();
     // console.log(resData);
     if (!resData.data) {
-      router.push("/blogs");
+      router.push("/blog");
     }
     setPost(resData.data);
+    setDate(moment(resData.uploadedAt).calendar());
   };
 
   useEffect(() => {
@@ -61,7 +62,7 @@ const BlogPost = ({ blogId }: { blogId: string }) => {
           <div className="mt-1 flex flex-wrap gap-1 text-sm text-zinc-600">
             <p>{post?.category.category}</p>
             <p>・</p>
-            <p>{moment(post?.uploadedAt).calendar()}</p>
+            <p>{date as string}</p>
             <p>・</p>
             <p>by Faturshau</p>
           </div>
