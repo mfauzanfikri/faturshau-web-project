@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -92,13 +91,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex gap-4 text-zinc-400">
               <li>
-                <Link
-                  href="/blog"
-                  className="cursor-default"
-                  onClick={(e) => {
-                    e.preventDefault();
-                  }}
-                >
+                <Link href="/blog" className="text-light hover:text-zinc-200">
                   Blog
                 </Link>
               </li>
@@ -112,22 +105,16 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href=""
-                  className="cursor-default"
-                  onClick={(e) => {
-                    e.preventDefault();
-                  }}
+                  href="/portfolio"
+                  className="text-light hover:text-zinc-200"
                 >
                   Portfolio
                 </Link>
               </li>
               <li>
                 <Link
-                  href=""
-                  className="cursor-default"
-                  onClick={(e) => {
-                    e.preventDefault();
-                  }}
+                  href="/contact"
+                  className="text-light hover:text-zinc-200"
                 >
                   Contact
                 </Link>
@@ -145,12 +132,18 @@ const Navbar = () => {
           <li>
             <Link
               href="/blog"
-              className="inline-block w-full cursor-default px-5 py-2"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              className="text-dark inline-block w-full cursor-default px-5 py-2"
             >
               Blog
+            </Link>
+            <hr className="mx-3" />
+          </li>
+          <li>
+            <Link
+              href="/portfolio"
+              className="text-dark inline-block w-full cursor-default px-5 py-2"
+            >
+              Portfolio
             </Link>
             <hr className="mx-3" />
           </li>
@@ -165,23 +158,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="#"
-              className="inline-block w-full cursor-default px-5 py-2"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
-            >
-              Portfolio
-            </Link>
-            <hr className="mx-3" />
-          </li>
-          <li>
-            <Link
-              href="#"
-              className="inline-block w-full cursor-default px-5 py-2"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
+              href="/contact"
+              className="text-dark inline-block w-full cursor-default px-5 py-2"
             >
               Contact
             </Link>
