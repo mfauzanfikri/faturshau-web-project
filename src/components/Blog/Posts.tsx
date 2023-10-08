@@ -32,7 +32,9 @@ const Posts = ({ posts }: { posts: Blog[] }) => {
                   <p className="text-[0.6rem]">
                     {moment(post.uploadedAt).calendar()}
                   </p>
-                  <p className="text-sm lg:text-base">{post.description}</p>
+                  <p className="mt-1.5 text-sm lg:text-base">
+                    {post.description}
+                  </p>
                 </div>
               </article>
             </a>

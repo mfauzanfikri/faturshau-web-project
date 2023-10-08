@@ -133,6 +133,9 @@ const Navbar = () => {
             <Link
               href="/blog"
               className="text-dark inline-block w-full cursor-default px-5 py-2"
+              onClick={() => {
+                setIsShown(false);
+              }}
             >
               Blog
             </Link>
@@ -140,17 +143,11 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/portfolio"
-              className="text-dark inline-block w-full cursor-default px-5 py-2"
-            >
-              Portfolio
-            </Link>
-            <hr className="mx-3" />
-          </li>
-          <li>
-            <Link
               href="https://coppywriting.com/"
               className="text-dark inline-block w-full cursor-default px-5 py-2"
+              onClick={() => {
+                setIsShown(false);
+              }}
             >
               Coppywriting
             </Link>
@@ -158,8 +155,23 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              href="/portfolio"
+              className="text-dark inline-block w-full cursor-default px-5 py-2"
+              onClick={() => {
+                setIsShown(false);
+              }}
+            >
+              Portfolio
+            </Link>
+            <hr className="mx-3" />
+          </li>
+          <li>
+            <Link
               href="/contact"
               className="text-dark inline-block w-full cursor-default px-5 py-2"
+              onClick={() => {
+                setIsShown(false);
+              }}
             >
               Contact
             </Link>
