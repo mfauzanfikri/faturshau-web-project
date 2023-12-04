@@ -97,16 +97,42 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#0E100F] px-5 py-14 text-[#efefef] md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-8 xl:px-24 xl:pb-36 xl:pt-16 2xl:h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-24">
+    <section className="relative overflow-hidden bg-[#0E100F] px-5 py-14 text-[#efefef] md:flex md:gap-4 md:px-12 lg:px-12 lg:pb-24 lg:pt-14 xl:px-24 xl:pb-36 xl:pt-16 2xl:h-[calc(100vh-70.95px)] 2xl:px-36 2xl:pt-20">
       {/* caption */}
       <div className="z-10 flex flex-1 flex-col gap-4">
         <div className="mb-2">
-          <h1 className="text-[40px] font-black capitalize leading-[3rem] lg:text-5xl lg:leading-tight xl:text-6xl xl:leading-tight 2xl:text-7xl 2xl:leading-tight">
-            killer copy <br /> comedic flair <br /> own your style
+          <h1 className="text-[40px] font-black capitalize leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
+            The{" "}
+            <span className="relative">
+              <span className="line-through">Funniest</span>{" "}
+              <span className="absolute left-[25%] -translate-y-[80%] -rotate-12 font-gochi font-normal text-blue-600">
+                Finest
+              </span>
+            </span>{" "}
+            Copywriter <br /> Showing you how to <br /> Own your style
           </h1>
+
+          <p className="mt-5 text-xs font-semibold md:text-sm xl:text-lg 2xl:text-xl">
+            Only with what you have right now. Like...Email?!
+          </p>
+
           <p className="mb-4 mt-6 max-w-sm text-lg sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
-            Join the <b>1% stylish copywriters</b>. IF my DAILY emails don’t{" "}
-            <br className="hidden sm:block" />
+            Yo Homie! My name is Fatur Shau and I&apos;m self-styled
+            <br />
+            as the{" "}
+            <b className="font-extrabold">
+              “<u>punnyest</u>“
+            </b>{" "}
+            copywriter.
+          </p>
+
+          <p className="mb-4 mt-6 max-w-sm text-lg font-semibold sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+            Don&apos;t believe me?
+          </p>
+
+          <p className="mb-5 mt-6 max-w-sm text-lg sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+            Join the <b>1% stylish copywriters</b>. IF my DAILY emails
+            don&apos;t <br className="hidden sm:block" />
             give you a single <br className="hero-br sm:hidden" />
             <b className="font-extrabold">
               “<u>Haha Moment</u>“
@@ -114,11 +140,12 @@ const Hero = () => {
             … Call me a fraud* <br className="hidden sm:block" /> and
             unsubscribe.
           </p>
-          <p className="text-sm font-semibold italic md:text-base xl:text-xl 2xl:text-2xl">
-            Always join for free below.
+          <p className="mt-5 text-xs font-semibold italic md:text-sm xl:text-lg 2xl:text-xl">
+            Homies join for free below.
           </p>
         </div>
 
+        {/* email capture */}
         <div className="relative mt-2 flex flex-col md:max-w-md lg:max-w-xl lg:flex-row lg:gap-4">
           <div className="relative lg:w-3/5">
             <input
@@ -137,7 +164,7 @@ const Hero = () => {
               }`}
             >
               <span className="invisible">a</span>
-              {isError && "Don’t use your “swipe-files” emails!"}
+              {isError && "Don&apos;t use your “swipe-files” emails!"}
               <br className={`${isError && !isValid ? "" : "hidden"}`} />
               {!isValid && "Email is not valid. Try using your main email."}
               {isDone &&
@@ -203,16 +230,16 @@ const Hero = () => {
           }`}
         >
           <span className="invisible">a</span>
-          {isError && "There’s something wrong. Try again later."}
+          {isError && "There&apos;s something wrong. Try again later."}
           <br className={`${isError && !isValid ? "" : "hidden"}`} />
           {!isValid && "Email is not valid. Try again later."}
           {isDone &&
             "Success! Now check your email to confirm your subscription."}
         </p>
 
-        <div className="pt-4">
+        <div className="">
           <p className="text-[8px] lg:text-xs xl:text-sm">
-            *NO <u>PLEASE DON’T</u>! <br className="md:hidden" /> Just
+            *NO <u>PLEASE DON&apos;T</u>! <br className="md:hidden" /> Just
             unsubscribe and go away in peace.
           </p>
         </div>

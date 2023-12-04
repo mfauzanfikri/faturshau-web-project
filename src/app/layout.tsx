@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins, Cardo, Tenor_Sans } from "next/font/google";
+import { Poppins, Cardo, Tenor_Sans, Gochi_Hand } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -24,6 +24,12 @@ const tenor = Tenor_Sans({
   variable: "--font-tenor",
 });
 
+const gochi = Gochi_Hand({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-gochi",
+});
+
 export const metadata: Metadata = {
   title: {
     template: "Fatur Shau - %s",
@@ -39,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      className={`${poppins.variable} ${cardo.variable} ${tenor.variable}`}
+      className={`${poppins.variable} ${cardo.variable} ${tenor.variable} ${gochi.variable}`}
       lang="en"
     >
       <head>

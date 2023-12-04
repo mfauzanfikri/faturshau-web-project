@@ -91,6 +91,11 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex gap-4 text-zinc-400">
               <li>
+                <Link href="/" className="text-light hover:text-zinc-200">
+                  Home
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-light hover:text-zinc-200">
                   Blog
                 </Link>
@@ -112,6 +117,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/about" className="text-light hover:text-zinc-200">
+                  About
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/contact"
                   className="text-light hover:text-zinc-200"
@@ -129,6 +139,18 @@ const Navbar = () => {
             !isShown ? "-top-12 opacity-0" : "top-[60px] opacity-100"
           } text-zinc-400 transition-all duration-300 ease-in`}
         >
+          <li>
+            <Link
+              href="/"
+              className="text-dark inline-block w-full cursor-default px-5 py-2"
+              onClick={() => {
+                setIsShown(false);
+              }}
+            >
+              Home
+            </Link>
+            <hr className="mx-3" />
+          </li>
           <li>
             <Link
               href="/blog"
@@ -164,6 +186,17 @@ const Navbar = () => {
               Portfolio
             </Link>
             <hr className="mx-3" />
+          </li>
+          <li>
+            <Link
+              href="/about"
+              className="text-dark inline-block w-full cursor-default px-5 py-2"
+              onClick={() => {
+                setIsShown(false);
+              }}
+            >
+              About
+            </Link>
           </li>
           <li>
             <Link

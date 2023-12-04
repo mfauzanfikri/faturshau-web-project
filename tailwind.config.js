@@ -16,6 +16,7 @@ module.exports = {
         poppins: ["var(--font-poppins)"],
         cardo: ["var(--font-cardo)"],
         tenor: ["var(--font-tenor)"],
+        gochi: ["var(--font-gochi)"],
       },
       keyframes: {
         "slide-in": {

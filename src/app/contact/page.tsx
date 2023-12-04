@@ -1,89 +1,28 @@
 const page = () => {
   return (
     <>
-      <section className="bg-white py-8 lg:flex lg:justify-center lg:py-12">
-        <div className="lg:flex">
+      <section className="flex justify-center bg-white py-8 lg:py-12 2xl:pb-24 2xl:pt-16">
+        <div className="flex">
           {/* contact content */}
           <section className="px-4">
-            <h1 className="mb-6 text-2xl font-bold md:text-center lg:text-3xl">
+            <h1 className="mb-6 text-center text-2xl font-bold lg:text-3xl 2xl:text-4xl">
               Contact Me
             </h1>
             <p className="mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Thanks for your interest in contacting me. I appreciate it.
             </p>
             <p className="mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              The best way to contact me is via this email:
             </p>
-
-            {/* advice & question */}
-            <section className="pt-8">
-              <h3 className="font-bold uppercase lg:text-xl">
-                advice & questions
-              </h3>
-              <p className="mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex,
-                labore.
-              </p>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <a href="" className="text-blue-600">
-                  Est sapiente earum atque, harum aspernatur deleniti laboriosam
-                  similique.
-                </a>
-              </p>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet.
-                <a href="" className="text-blue-600">
-                  Est sapiente earum atque.
-                </a>
-              </p>
-            </section>
-            {/* advice & question */}
-            <section className="pt-8">
-              <h3 className="font-bold uppercase lg:text-xl">
-                advice & questions
-              </h3>
-              <p className="mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex,
-                labore.
-              </p>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <a href="" className="text-blue-600">
-                  Est sapiente earum atque, harum aspernatur deleniti laboriosam
-                  similique.
-                </a>
-              </p>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet.
-                <a href="" className="text-blue-600">
-                  Est sapiente earum atque.
-                </a>
-              </p>
-            </section>
-            {/* advice & question */}
-            <section className="pt-8">
-              <h3 className="font-bold uppercase lg:text-xl">
-                advice & questions
-              </h3>
-              <p className="mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex,
-                labore.
-              </p>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <a href="" className="text-blue-600">
-                  Est sapiente earum atque, harum aspernatur deleniti laboriosam
-                  similique.
-                </a>
-              </p>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet.
-                <a href="" className="text-blue-600">
-                  Est sapiente earum atque.
-                </a>
-              </p>
-            </section>
+            <p className="mt-2">
+              <a
+                href="mailto:shau@faturshau.com"
+                className="text-blue-500 underline visited:text-blue-400 hover:text-blue-300"
+              >
+                shau@faturshau.com
+              </a>
+            </p>
+            <p className="mt-2">Please keep the message short and clear.</p>
           </section>
         </div>
       </section>

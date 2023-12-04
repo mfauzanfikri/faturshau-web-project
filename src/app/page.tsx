@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://faturshau.com"),
   title: "Fatur Shau - Home",
   description:
-    "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
+    "Hey. I&apos;m Fatur Shau. I&apos;m the Storystylist Copywriter and comedian.",
   openGraph: {
     title: "",
     description: "",
@@ -72,24 +72,24 @@ export default function HomePage() {
         {/* contents */}
         <div className="mt-4 py-2 lg:mt-0 lg:w-[65%] lg:justify-start lg:self-stretch">
           <h2 className="text-2xl font-bold lg:text-3xl">
-            Hey. I’m Shau. Fatur Shau.
+            Hey. I&apos;m Shau. Fatur Shau.
           </h2>
 
           <p className="font-semibold lg:text-lg">
-            I’m the Storystylist Copywriter and aspiring comedian.
+            I&apos;m the Storystylist Copywriter and aspiring comedian.
           </p>
 
           <p className="mt-4 lg:text-lg">
-            I’m Indonesia’s funniest copywriter in 3 years!
+            I&apos;m Indonesia&apos;s funniest copywriter in 3 years!
           </p>
 
           <p className="mt-4 lg:text-lg">
             OR{" "}
             <span className="font-semibold underline">
-              you’ll never know about me.
+              you&apos;ll never know about me.
             </span>{" "}
-            I’ll make everything about &quot;thestorystylist&quot; nonexistent.
-            Just like the bird on X.
+            I&apos;ll make everything about &quot;thestorystylist&quot;
+            nonexistent. Just like the bird on X.
           </p>
 
           <p className="mt-4 text-sm lg:text-base">
@@ -100,7 +100,7 @@ export default function HomePage() {
           <p className="mt-4 lg:text-lg">Out of seriousness...</p>
 
           <p className="mt-4 lg:text-lg">
-            I’m a Founder of Coppywriting and Co-Founder of a local café.
+            I&apos;m a Founder of Coppywriting and Co-Founder of a local café.
           </p>
 
           <p className="mt-4 lg:text-lg">
@@ -108,17 +108,17 @@ export default function HomePage() {
             style.
           </p>
 
-          <p className="mt-4 lg:text-lg">Don’t believe me?</p>
+          <p className="mt-4 lg:text-lg">Don&apos;t believe me?</p>
 
           <p className="mt-4 lg:text-lg">Try it yourself!</p>
 
           <p className="mt-4 font-semibold lg:text-lg">
-            I’m available for work. Contact me here:{" "}
+            I&apos;m available for work. Contact me here:{" "}
             <a
-              href="mailto:shau@coppywriting.com"
+              href="mailto:shau@faturshau.com"
               className="text-blue-600 underline visited:text-blue-700 hover:text-blue-500"
             >
-              shau@coppywriting.com
+              shau@faturshau.com
             </a>
           </p>
         </div>
@@ -151,13 +151,13 @@ export default function HomePage() {
             business <span className="font-semibold underline">context?</span>
           </p>
           <p>
-            Don’t even understand the{" "}
+            Don&apos;t even understand the{" "}
             <span className="font-semibold underline">
               fundamentals of copywriting?
             </span>
           </p>
-          <p className="text-lg font-semibold">I’m available for work. </p>
-          <a href="mailto:shau@coppywriting.com" className="mt-2">
+          <p className="text-lg font-semibold">I&apos;m available for work. </p>
+          <a href="mailto:shau@faturshau.com" className="mt-2">
             <button className="text-light rounded-sm bg-black px-5 py-2.5 font-semibold hover:opacity-95">
               Contact
             </button>
@@ -171,14 +171,17 @@ export default function HomePage() {
           </div>
           <h3 className="text-2xl font-bold">Join my email list</h3>
           <p>
-            My email is not for everyone. And it’s neither free
-            entertainment/infotainment. It’s email marketing. Meaning? I email
-            and sell <span className="font-semibold underline">A LOT!</span>
+            My email is not for everyone. And it&apos;s neither free
+            entertainment/infotainment. It&apos;s email marketing. Meaning? I
+            email and sell{" "}
+            <span className="font-semibold underline">A LOT!</span>
           </p>
           <p>
-            If you’ll just report me as spam on day 2 instead of UNSUBSCRIBE to
-            me...{" "}
-            <span className="font-semibold uppercase underline">don’t</span>{" "}
+            If you&apos;ll just report me as spam on day 2 instead of
+            UNSUBSCRIBE to me...{" "}
+            <span className="font-semibold uppercase underline">
+              don&apos;t
+            </span>{" "}
             click the button.
           </p>
           <p>
@@ -196,14 +199,14 @@ export default function HomePage() {
           </div>
           <h3 className="text-2xl font-bold">Coppywriting</h3>
           <p>
-            You’ll learn{" "}
+            You&apos;ll learn{" "}
             <span className="font-semibold underline">
               everything I know about copywriting
             </span>{" "}
             (the right way). I spent THOUSANDS of dollars and hours of sleepless
             nights for this. And{" "}
             <span className="font-semibold underline">
-              you’ll get it for FREE.
+              you&apos;ll get it for FREE.
             </span>
           </p>
           <a href="https://coppywriting.com/" className="mt-2">

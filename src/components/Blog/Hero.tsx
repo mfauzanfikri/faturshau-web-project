@@ -99,19 +99,51 @@ const Hero = () => {
   };
 
   return (
-    <section className="text-light bg-neutral-700 px-4 py-10 md:px-10 md:py-16 xl:py-24">
+    <section className="text-light bg-[#0E100F] px-4 py-10 md:px-10 md:py-16 xl:py-24">
       <div className="mx-auto md:flex lg:max-w-7xl">
-        <div className="md:w-[55%] md:p-6">
-          <div>
-            <h1 className="text-3xl font-bold lg:text-4xl xl:text-6xl">
-              Lorem ipsum dolor sit amet.
+        <div className="mx-auto md:w-[70%] md:p-6">
+          <div className="mb-2">
+            <h1 className="text-[40px] font-black capitalize leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
+              The{" "}
+              <span className="relative">
+                <span className="line-through">Funniest</span>{" "}
+                <span className="absolute left-[25%] -translate-y-[80%] -rotate-12 font-gochi font-normal text-blue-600">
+                  Finest
+                </span>
+              </span>{" "}
+              Copywriter <br /> Showing you how to <br /> Own your style
             </h1>
-            <p className="mb-2 mt-1 text-xl lg:text-2xl xl:text-4xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            <p className="mt-5 text-xs font-semibold md:text-sm xl:text-lg 2xl:text-xl">
+              Only with what you have right now. Like...Email?!
             </p>
-            <p className="lg:text-lg xl:text-2xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              exercitationem aut autem, illum suscipit esse?
+
+            <p className="mb-4 mt-6 max-w-sm text-lg sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+              Yo Homie! My name is Fatur Shau and I&apos;m self-styled
+              <br />
+              as the{" "}
+              <b className="font-extrabold">
+                “<u>punnyest</u>“
+              </b>{" "}
+              copywriter.
+            </p>
+
+            <p className="mb-4 mt-6 max-w-sm text-lg font-semibold sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+              Don&apos;t believe me?
+            </p>
+
+            <p className="mb-5 mt-6 max-w-sm text-lg sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+              Join the <b>1% stylish copywriters</b>. IF my DAILY emails
+              don&apos;t <br className="hidden sm:block" />
+              give you a single <br className="hero-br sm:hidden" />
+              <b className="font-extrabold">
+                “<u>Haha Moment</u>“
+              </b>{" "}
+              … Call me a fraud* <br className="hidden sm:block" /> and
+              unsubscribe.
+            </p>
+            <p className="mt-5 text-xs font-semibold italic md:text-sm xl:text-lg 2xl:text-xl">
+              Homies join for free below.
             </p>
           </div>
           <div className="mt-4 flex flex-col">
@@ -149,12 +181,15 @@ const Hero = () => {
               >
                 Subscribe
               </button>
+
+              <div className="mt-5">
+                <p className="text-[8px] lg:text-xs xl:text-sm">
+                  *NO <u>PLEASE DON&apos;T</u>! <br className="md:hidden" />{" "}
+                  Just unsubscribe and go away in peace.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="hidden md:block md:w-[45%] md:p-6">
-          <div className="h-24 w-24 bg-black"></div>
         </div>
       </div>
     </section>
