@@ -97,7 +97,7 @@ export default function HomePage() {
             Exactly! Nothing.)
           </p>
 
-          <p className="mt-4 lg:text-lg">Out of seriousness...</p>
+          <p className="mt-4 lg:text-lg">In all seriousness...</p>
 
           <p className="mt-4 lg:text-lg">
             I&apos;m a Founder of Coppywriting and Co-Founder of a local café.

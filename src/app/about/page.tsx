@@ -4,7 +4,7 @@ const page = () => {
   return (
     <section className="bg-white py-8 lg:py-12 2xl:pb-24 2xl:pt-16">
       <h1 className="my-2 text-center text-2xl font-bold lg:text-3xl 2xl:text-4xl">
-        Contact Me
+        About Me
       </h1>
       <div className="mx-auto mt-8 flex max-w-xl flex-col items-center justify-center px-5 lg:max-w-7xl lg:flex-row lg:flex-wrap">
         {/* image */}
@@ -46,7 +46,7 @@ const page = () => {
             Exactly! Nothing.)
           </p>
 
-          <p className="mt-4 lg:text-lg">Out of seriousness...</p>
+          <p className="mt-4 lg:text-lg">In all seriousness...</p>
 
           <p className="mt-4 lg:text-lg">
             I&apos;m a Founder of Coppywriting and Co-Founder of a local café.
