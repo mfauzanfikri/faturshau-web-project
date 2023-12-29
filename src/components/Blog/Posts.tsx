@@ -17,6 +17,9 @@ const Posts = ({ posts }: { posts: Blog[] }) => {
   return (
     <ul className="w-full max-w-4xl">
       {posts.map((post) => {
+        if (!post.status) {
+          return;
+        }
         return (
           <li
             key={post.id}
@@ -30,7 +33,9 @@ const Posts = ({ posts }: { posts: Blog[] }) => {
                   </p>
                   <h4 className="mb-2 text-xl font-bold">{post.title}</h4>
                   <p className="text-[0.6rem]">
-                    {moment(post.uploadedAt).calendar()}
+                    {moment(post.uploadedAt).calendar(null, {
+                      sameElse: "DD/MM/YY",
+                    })}
                   </p>
                   <p className="mt-1.5 text-sm lg:text-base">
                     {post.description}

@@ -37,7 +37,7 @@ const page = () => {
       <section className="flex flex-col gap-6 bg-zinc-50 px-4 py-12 align-middle md:px-10">
         <div>
           <h2 className="text-center text-2xl font-medium lg:text-3xl">
-            Lorem ipsum dolor sit.
+            Blog Posts
           </h2>
         </div>
 

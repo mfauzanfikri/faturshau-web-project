@@ -32,6 +32,11 @@
   overscroll-behavior: none;
 }
 
+p:empty::before {
+  content: "";
+  display: inline-block;
+}
+
 /* body::-webkit-scrollbar {
   display: none;
 }

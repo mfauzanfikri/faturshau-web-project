@@ -103,7 +103,7 @@ const Hero = () => {
       <div className="mx-auto md:flex lg:max-w-7xl">
         <div className="mx-auto md:w-[70%] md:p-6">
           <div className="mb-2">
-            <h1 className="text-[40px] font-black capitalize leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
+            <h1 className="heading text-[24px] font-black capitalize leading-9 sm:text-[40px] sm:leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
               The{" "}
               <span className="relative">
                 <span className="line-through">Funniest</span>{" "}

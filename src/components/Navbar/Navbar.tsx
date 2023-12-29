@@ -136,7 +136,7 @@ const Navbar = () => {
         {/* Mobile Nav Items */}
         <ul
           className={`bg-light absolute z-[-1] w-full shadow-lg md:hidden ${
-            !isShown ? "-top-12 opacity-0" : "top-[60px] opacity-100"
+            !isShown ? "-top-64 opacity-0" : "top-[60px] opacity-100"
           } text-zinc-400 transition-all duration-300 ease-in`}
         >
           <li>

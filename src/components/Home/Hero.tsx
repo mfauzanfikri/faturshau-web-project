@@ -101,7 +101,7 @@ const Hero = () => {
       {/* caption */}
       <div className="z-10 flex flex-1 flex-col gap-4">
         <div className="mb-2">
-          <h1 className="text-[40px] font-black capitalize leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
+          <h1 className="heading text-[24px] font-black capitalize leading-9 sm:text-[40px] sm:leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
             The{" "}
             <span className="relative">
               <span className="line-through">Funniest</span>{" "}
@@ -109,10 +109,11 @@ const Hero = () => {
                 Finest
               </span>
             </span>{" "}
-            Copywriter <br /> Showing you how to <br /> Own your style
+            Copywriter <br /> Showing you how to <br />{" "}
+            <span className="text-blue-600">Own your style</span>
           </h1>
 
-          <p className="mt-5 text-xs font-semibold md:text-sm xl:text-lg 2xl:text-xl">
+          <p className="mt-5 text-sm font-semibold xl:text-lg 2xl:text-xl">
             Only with what you have right now. Like...Email?!
           </p>
 
@@ -244,16 +245,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
-      {/* hero image */}
-      <Image
-        src="/images/fatur_shau_alt.png"
-        width={2745}
-        height={3750}
-        alt="Fatur Shau"
-        className="absolute bottom-0 right-12 z-0 hidden h-[95%] w-auto lg:block xl:right-24 2xl:right-36"
-        priority={true}
-      />
     </section>
   );
 };
