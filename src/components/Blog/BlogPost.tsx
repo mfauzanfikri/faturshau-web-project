@@ -128,6 +128,7 @@ const BlogPost = () => {
         <input
           className="h-5 w-40 px-2.5 py-4 focus:outline-none lg:w-48"
           type="text"
+          disabled={isLoading}
           placeholder="search blog"
           onChange={searchInputHandle}
         />
@@ -139,7 +140,7 @@ const BlogPost = () => {
             return loader;
           })}
         </ul>
-      ) : blogPosts.length === 0 ? (
+      ) : defaultBlogPosts.length === 0 ? (
         <div className="flex w-full flex-1 items-center justify-center px-5 text-center">
           <div className="text-dark flex h-96 flex-col items-center justify-center gap-2 xl:h-[30rem]">
             {/* loading */}
@@ -175,6 +176,10 @@ const BlogPost = () => {
             </p>
           </div>
         </div>
+      ) : blogPosts.length === 0 ? (
+        <>
+          <p>Post not found.</p>
+        </>
       ) : (
         <>
           <Posts posts={currentPosts} />

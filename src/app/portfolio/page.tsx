@@ -24,7 +24,7 @@ const page = async () => {
             <p className="mt-1.5 text-zinc-700">{blog.description}</p>
             <div className="mt-2.5 lg:mt-1.5">
               <a
-                href={`${process.env.BASE_URL}/blog/${blog.id}`}
+                href={`/blog/${blog.id}`}
                 className="flex items-center justify-center gap-1 text-sm font-semibold text-zinc-500 hover:cursor-pointer hover:text-zinc-600 lg:justify-end"
               >
                 Continue Reading <FaArrowRight />
