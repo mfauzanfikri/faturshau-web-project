@@ -34,7 +34,7 @@ const Bob = async () => {
   const bob: IBob[] = await fetchBob();
   return (
     <section className="mb-8 mt-5 flex justify-center">
-      <div className="flex max-w-6xl flex-col items-start justify-center gap-5 lg:mt-4 lg:flex-row lg:justify-center lg:gap-10 lg:px-5">
+      <div className="mx-5 flex max-w-md flex-col items-start justify-center gap-5 lg:mt-4 lg:max-w-6xl lg:flex-row lg:justify-center lg:gap-10 lg:px-5">
         {bob && bob.length > 0 ? (
           bob.map((el) => {
             return (

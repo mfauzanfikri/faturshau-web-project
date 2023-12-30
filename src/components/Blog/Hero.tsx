@@ -103,7 +103,7 @@ const Hero = () => {
       <div className="mx-auto md:flex lg:max-w-7xl">
         <div className="mx-auto md:w-[70%] md:p-6">
           <div className="mb-2">
-            <h1 className="heading text-[24px] font-black capitalize leading-9 sm:text-[40px] sm:leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
+            <h1 className="heading text-[24px] font-black leading-9 sm:text-[40px] sm:leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
               The{" "}
               <span className="relative">
                 <span className="line-through">Funniest</span>{" "}
@@ -111,14 +111,15 @@ const Hero = () => {
                   Finest
                 </span>
               </span>{" "}
-              Copywriter <br /> Showing you how to <br /> Own your style
+              Copywriter <br /> Showing you how to <br />{" "}
+              <span className="text-blue-600">Own your style</span>
             </h1>
 
             <p className="mt-5 text-xs font-semibold md:text-sm xl:text-lg 2xl:text-xl">
               Only with what you have right now. Like...Email?!
             </p>
 
-            <p className="mb-4 mt-6 max-w-sm text-lg sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+            <p className="mb-4 mt-6 max-w-sm text-sm sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
               Yo Homie! My name is Fatur Shau and I&apos;m self-styled
               <br />
               as the{" "}
@@ -128,11 +129,11 @@ const Hero = () => {
               copywriter.
             </p>
 
-            <p className="mb-4 mt-6 max-w-sm text-lg font-semibold sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+            <p className="mb-4 mt-6 max-w-sm text-sm font-semibold sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
               Don&apos;t believe me?
             </p>
 
-            <p className="mb-5 mt-6 max-w-sm text-lg sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+            <p className="mb-5 mt-6 max-w-sm text-sm sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
               Join the <b>1% stylish copywriters</b>. IF my DAILY emails
               don&apos;t <br className="hidden sm:block" />
               give you a single <br className="hero-br sm:hidden" />
@@ -143,7 +144,7 @@ const Hero = () => {
               unsubscribe.
             </p>
             <p className="mt-5 text-xs font-semibold italic md:text-sm xl:text-lg 2xl:text-xl">
-              Homies join for free below.
+              Homie joins for free below.
             </p>
           </div>
           <div className="mt-4 flex flex-col">

@@ -36,7 +36,7 @@ const Archives = async () => {
   const posts: Blog[] = await fetchBlogs();
 
   return (
-    <section className="mb-10 flex items-center justify-center gap-8 bg-white px-3 py-12">
+    <section className="mb-10 flex flex-col items-center justify-center gap-8 bg-white px-3 py-12 lg:flex-row">
       {!posts || posts.length === 0 ? (
         <div className="flex w-full flex-1 items-center justify-center px-5 text-center">
           <div className="text-dark flex h-96 flex-col items-center justify-center gap-2 xl:h-[30rem]">
@@ -82,9 +82,9 @@ const Archives = async () => {
             <Link
               key={post.id}
               href={`${process.env.NEXT_PUBLIC_BASE_URL}/blog/${post.id}`}
-              className="group hover:cursor-pointer"
+              className="group max-w-md hover:cursor-pointer"
             >
-              <div className="max-w-md border-b border-zinc-400 py-4 group-hover:bg-zinc-100 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
+              <div className="border-b border-zinc-400 py-4 group-hover:bg-zinc-100 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
                 <div className="mb-3 px-8 ">
                   <p className="mb-1 text-xs text-zinc-500">
                     {post.category.category}

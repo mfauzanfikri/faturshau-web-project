@@ -2,9 +2,9 @@
 
 const nextConfig = {
   // output: "export",
-  // images: {
-  //   unoptimized: true,
-  // },
+  images: {
+    unoptimized: true,
+  },
   // distDir: "dist",
   // experimental: {
   //   workerThreads: false,
