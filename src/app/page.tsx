@@ -11,21 +11,23 @@ export const metadata: Metadata = {
   description:
     "Hey. I&apos;m Fatur Shau. I&apos;m the Storystylist Copywriter and comedian.",
   openGraph: {
-    title: "",
-    description: "",
+    title: "Home | Fatur Shau",
+    description:
+      "Hey. I&apos;m Fatur Shau. I&apos;m the Storystylist Copywriter and comedian.",
     url: "https://faturshau.com",
-    siteName: "",
+    siteName: "Fatur Shau",
     // images: "",
     locale: "id_ID",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "",
-    description: "",
-    siteId: "",
-    creator: "",
-    creatorId: "",
+    title: "Home | Fatur Shau",
+    description:
+      "Hey. I&apos;m Fatur Shau. I&apos;m the Storystylist Copywriter and comedian.",
+    siteId: "1576028678462394368",
+    creator: "thestorystylist",
+    creatorId: "1576028678462394368",
     // images: "",
   },
 };

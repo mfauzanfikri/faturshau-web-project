@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "",
     description: "",
     url: "https://faturshau.com",
-    siteName: "",
+    siteName: "Fatur Shau",
     // images: "",
     locale: "id_ID",
     type: "website",
@@ -56,6 +56,28 @@ export async function generateMetadata(
   return {
     title: blog.data?.title || "",
     description: blog.data?.description || "",
+    openGraph: {
+      title: blog.data?.title || "",
+      description: blog.data?.description || "",
+      url: `${process.env.BASE_URL}/blog/${
+        blog.data?.title
+          .toLowerCase()
+          .replaceAll(" ", "-")
+          .replaceAll("%", "%25") || ""
+      }`,
+      siteName: "Fatur Shau",
+      locale: "id_ID",
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      title: blog.data?.title || "",
+      description: blog.data?.description || "",
+      siteId: "1576028678462394368",
+      creator: "thestorystylist",
+      creatorId: "1576028678462394368",
+      // images: "",
+    },
   };
 }
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Who is Fatur Shau? About Me | Fatur Shau",
     description: "Blog to help you learn the copywriting fundamentals",
     url: "https://faturshau.com/about",
-    siteName: "",
+    siteName: "Fatur Shau",
     // images: "",
     locale: "id_ID",
     type: "website",

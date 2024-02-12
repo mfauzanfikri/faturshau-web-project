@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Contact Me | Fatur Shau",
     description: "The best way to contact Fatur Shau.",
     url: "https://faturshau.com/contact",
-    siteName: "",
+    siteName: "Fatur Shau",
     // images: "",
     locale: "id_ID",
     type: "website",

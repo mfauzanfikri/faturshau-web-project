@@ -1,4 +1,4 @@
-import { notFound, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import moment from "moment";
 import {
   HiCalendar,
@@ -7,20 +7,6 @@ import {
   HiFolder,
   HiTag,
 } from "react-icons/hi";
-import { Metadata, ResolvingMetadata } from "next";
-
-type Blog = {
-  id: number;
-  title: string;
-  description: string;
-  categoryId: number;
-  content: string;
-  thumbnail: string;
-  uploadedAt?: Date;
-  status?: boolean;
-  category: { category: string };
-  BlogTags: { id: number; tagId: number; tag: { id: number; tag: string } }[];
-};
 
 const fetchBlogBySlug = async (slug: string) => {
   const res = await fetch(
@@ -89,9 +75,14 @@ const BlogPost = async ({ slug }: { slug: string }) => {
             {post?.title}
           </h1>
         </div>
-        <div className="mb-24 mt-16">
+
+        <hr className="mx-auto my-4 h-[0.15rem] w-full rounded-sm border-0 bg-gray-300 md:my-10" />
+
+        <div className="my-16">
           <div dangerouslySetInnerHTML={{ __html: post?.content! }}></div>
         </div>
+
+        <hr className="mx-auto my-4 h-[0.15rem] w-full rounded-sm border-0 bg-gray-300 md:my-10" />
 
         <div className="font-cardo font-semibold">
           <div className="mt-8">
