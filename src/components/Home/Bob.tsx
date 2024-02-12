@@ -56,7 +56,14 @@ const Bob = async () => {
                       {el.blog.description}
                     </p>
                     <a
-                      href={process.env.NEXT_PUBLIC_BASE_URL + "/blog/" + el.id}
+                      href={
+                        process.env.NEXT_PUBLIC_BASE_URL +
+                        "/blog/" +
+                        el.blog.title
+                          .toLowerCase()
+                          .replaceAll(" ", "-")
+                          .replaceAll("%", "%25")
+                      }
                       className="mt-2 hover:opacity-80"
                     >
                       <button className="text-light rounded-sm bg-black px-2 py-1.5 text-sm font-semibold hover:opacity-95">

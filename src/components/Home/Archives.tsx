@@ -83,7 +83,10 @@ const Archives = async () => {
             return (
               <Link
                 key={post.id}
-                href={`${process.env.NEXT_PUBLIC_BASE_URL}/blog/${post.id}`}
+                href={`${process.env.NEXT_PUBLIC_BASE_URL}/blog/${post.title
+                  .toLowerCase()
+                  .replaceAll(" ", "-")
+                  .replaceAll("%", "%25")}`}
                 className="group max-w-md hover:cursor-pointer"
               >
                 <div className="border-b border-zinc-400 py-4 group-hover:bg-zinc-100 lg:rounded lg:border lg:border-solid lg:border-zinc-200 lg:shadow-lg">
