@@ -1,7 +1,6 @@
 "use client";
 
 import { ChangeEvent, useRef, useState } from "react";
-import Image from "next/image";
 import validator from "validator";
 import "./Home.css";
 
@@ -101,7 +100,7 @@ const Hero = () => {
       {/* caption */}
       <div className="z-10 flex flex-1 flex-col gap-4">
         <div className="mb-2">
-          <h1 className="heading text-2xl font-black leading-9 sm:text-[40px] sm:leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
+          <h1 className="heading text-2xl font-black leading-9 xs:text-[2rem] sm:text-[40px] sm:leading-[3rem] lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight 2xl:text-6xl 2xl:leading-tight">
             The{" "}
             <span className="relative">
               <span className="line-through">Funniest</span>{" "}
@@ -113,13 +112,13 @@ const Hero = () => {
             <span className="text-blue-600">Own your style</span>
           </h1>
 
-          <p className="mt-5 text-xs font-semibold xl:text-lg 2xl:text-xl">
+          <p className="mt-5 text-[13px] font-semibold xs:text-sm xl:text-lg 2xl:text-xl">
             Only with what you have right now. Like...Email?!
           </p>
 
-          <p className="mb-4 mt-6 max-w-sm text-sm sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
-            Yo Homie! My name is Fatur Shau and I&apos;m self-styled
-            <br />
+          <p className="mb-4 mt-6 max-w-[27rem] text-base sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+            Yo Homie! My name is Fatur Shau and I&apos;m self-styled{" "}
+            <br className="hidden sm:block" />
             as the{" "}
             <b className="font-extrabold">
               “<u>punnyest</u>“
@@ -127,11 +126,11 @@ const Hero = () => {
             copywriter.
           </p>
 
-          <p className="mb-4 mt-6 max-w-sm text-sm font-semibold sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+          <p className="mb-4 mt-6 max-w-sm text-base font-semibold sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
             Don&apos;t believe me?
           </p>
 
-          <p className="mb-5 mt-6 max-w-sm text-sm sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
+          <p className="mb-5 mt-6 max-w-sm text-base sm:max-w-none lg:mb-5 lg:mt-5 xl:mt-8 xl:text-xl 2xl:text-2xl">
             Join the <b>1% stylish copywriters</b>. IF my DAILY emails
             don&apos;t <br className="hidden sm:block" />
             give you a single{" "}
@@ -141,7 +140,7 @@ const Hero = () => {
             … Call me a fraud* <br className="hidden sm:block" /> and
             unsubscribe.
           </p>
-          <p className="mt-5 text-xs font-semibold italic md:text-sm xl:text-lg 2xl:text-xl">
+          <p className="mt-5 text-sm font-semibold italic md:text-sm xl:text-lg 2xl:text-xl">
             Homie joins for free below.
           </p>
         </div>

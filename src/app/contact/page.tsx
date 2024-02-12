@@ -1,3 +1,29 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://faturshau.com"),
+  title: "Contact Me | Fatur Shau",
+  description: "The best way to contact Fatur Shau.",
+  openGraph: {
+    title: "Contact Me | Fatur Shau",
+    description: "The best way to contact Fatur Shau.",
+    url: "https://faturshau.com/contact",
+    siteName: "",
+    // images: "",
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Contact Me | Fatur Shau",
+    description: "Here's how to contact Fatur Shau",
+    siteId: "1576028678462394368",
+    creator: "thestorystylist",
+    creatorId: "1576028678462394368",
+    // images: "",
+  },
+};
+
 const page = () => {
   return (
     <>

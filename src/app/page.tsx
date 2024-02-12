@@ -7,7 +7,7 @@ import Archives from "@/components/Home/Archives";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://faturshau.com"),
-  title: "Fatur Shau - Home",
+  title: "Home | Fatur Shau",
   description:
     "Hey. I&apos;m Fatur Shau. I&apos;m the Storystylist Copywriter and comedian.",
   openGraph: {

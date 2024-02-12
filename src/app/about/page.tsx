@@ -1,4 +1,29 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://faturshau.com"),
+  title: "Who is Fatur Shau? About Me | Fatur Shau",
+  description: "Who is Fatur Shau? About Me",
+  openGraph: {
+    title: "Who is Fatur Shau? About Me | Fatur Shau",
+    description: "Blog to help you learn the copywriting fundamentals",
+    url: "https://faturshau.com/about",
+    siteName: "",
+    // images: "",
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Who is Fatur Shau? About Me | Fatur Shau",
+    description: "Who is Fatur Shau? About Me",
+    siteId: "1576028678462394368",
+    creator: "thestorystylist",
+    creatorId: "1576028678462394368",
+    // images: "",
+  },
+};
 
 const page = () => {
   return (

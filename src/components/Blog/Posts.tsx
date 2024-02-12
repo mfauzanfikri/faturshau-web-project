@@ -25,7 +25,12 @@ const Posts = ({ posts }: { posts: Blog[] }) => {
             key={post.id}
             className="group border-b border-zinc-400 hover:bg-zinc-100 focus:bg-zinc-100"
           >
-            <a href={`/blog/${post.id}`}>
+            <a
+              href={`/blog/${post.title
+                .toLowerCase()
+                .replaceAll(" ", "-")
+                .replaceAll("%", "%25")}`}
+            >
               <article className="px-2.5 py-5">
                 <div className="mb-2 text-zinc-700">
                   <p className="mb-1 text-xs text-zinc-500">

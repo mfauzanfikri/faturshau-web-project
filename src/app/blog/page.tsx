@@ -4,13 +4,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://faturshau.com"),
-  title: "Fatur Shau - Blog",
-  description:
-    "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
+  title: "Blog | Fatur Shau",
+  description: "Blog to help you learn the copywriting fundamentals",
   openGraph: {
     title: "",
-    description: "",
-    url: "https://faturshau.com",
+    description: "Blog to help you learn the copywriting fundamentals",
+    url: "https://faturshau.com/blog",
     siteName: "",
     // images: "",
     locale: "id_ID",
@@ -18,11 +17,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "",
-    description: "",
-    siteId: "",
-    creator: "",
-    creatorId: "",
+    title: "Blog | Fatur Shau",
+    description: "Blog to help you learn the copywriting fundamentals",
+    siteId: "1576028678462394368",
+    creator: "thestorystylist",
+    creatorId: "1576028678462394368",
     // images: "",
   },
 };

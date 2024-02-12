@@ -32,7 +32,7 @@ const gochi = Gochi_Hand({
 
 export const metadata: Metadata = {
   title: {
-    template: "Fatur Shau - %s",
+    template: "",
     default: "Fatur Shau",
   },
   description: "Faturshau Web",

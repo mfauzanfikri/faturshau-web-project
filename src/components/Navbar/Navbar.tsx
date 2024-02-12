@@ -108,14 +108,14 @@ const Navbar = () => {
                   Coppywriting
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/portfolio"
                   className="text-light hover:text-zinc-200"
                 >
                   Portfolio
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/about" className="text-light hover:text-zinc-200">
                   About
@@ -175,7 +175,7 @@ const Navbar = () => {
             </Link>
             <hr className="mx-3" />
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/portfolio"
               className="text-dark inline-block w-full cursor-default px-5 py-2"
@@ -186,7 +186,7 @@ const Navbar = () => {
               Portfolio
             </Link>
             <hr className="mx-3" />
-          </li>
+          </li> */}
           <li>
             <Link
               href="/about"
