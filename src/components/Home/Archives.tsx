@@ -97,10 +97,6 @@ const Archives = async () => {
                     <p className="mb-4 text-sm text-zinc-500">
                       {post.description}
                     </p>
-                    <div className="mt-2">
-                      <p>See Blog</p>
-                      <HiChevronRight />
-                    </div>
                   </div>
                 </div>
               </Link>
@@ -108,14 +104,16 @@ const Archives = async () => {
           })
         )}
       </div>
-      <a
-        href={process.env.NEXT_PUBLIC_BASE_URL + "/blog"}
-        className="mx-auto mt-10 hover:opacity-90"
-      >
-        <button className="text-light rounded-sm bg-black px-2.5 py-2 text-lg font-semibold hover:opacity-95">
-          See Blog
-        </button>
-      </a>
+      <div className="mt-10 flex justify-center">
+        <a
+          href={process.env.NEXT_PUBLIC_BASE_URL + "/blog"}
+          className="hover:opacity-90"
+        >
+          <button className="text-light rounded-sm bg-black px-2.5 py-2 text-lg font-semibold hover:opacity-95">
+            See Blog
+          </button>
+        </a>
+      </div>
     </section>
   );
 };

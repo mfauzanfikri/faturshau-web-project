@@ -237,7 +237,7 @@ const Hero = () => {
             "Success! Now check your email to confirm your subscription."}
         </p>
 
-        <div className="">
+        <div>
           <p className="text-[8px] lg:text-xs xl:text-sm">
             *NO <u>PLEASE DON&apos;T</u>! <br className="md:hidden" /> Just
             unsubscribe and go away in peace.
