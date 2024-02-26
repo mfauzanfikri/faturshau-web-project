@@ -2,30 +2,30 @@ import { notFound, redirect } from "next/navigation";
 import BlogPost from "./BlogPost";
 import { Metadata, ResolvingMetadata } from "next";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://faturshau.com"),
-  title: "Blog | Fatur Shau",
-  description:
-    "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
-  openGraph: {
-    title: "",
-    description: "",
-    url: "https://faturshau.com",
-    siteName: "Fatur Shau",
-    // images: "",
-    locale: "id_ID",
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "",
-    description: "",
-    siteId: "",
-    creator: "",
-    creatorId: "",
-    // images: "",
-  },
-};
+// export const metadata: Metadata = {
+//   metadataBase: new URL("https://faturshau.com"),
+//   title: "Blog | Fatur Shau",
+//   description:
+//     "Hey. I’m Fatur Shau. I’m the Storystylist Copywriter and comedian.",
+//   openGraph: {
+//     title: "",
+//     description: "",
+//     url: "https://faturshau.com",
+//     siteName: "Fatur Shau",
+//     // images: "",
+//     locale: "id_ID",
+//     type: "website",
+//   },
+//   twitter: {
+//     card: "summary",
+//     title: "",
+//     description: "",
+//     siteId: "",
+//     creator: "",
+//     creatorId: "",
+//     // images: "",
+//   },
+// };
 
 export async function generateMetadata(
   { params }: { params: { slug: string } },
